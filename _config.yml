@@ -3,3 +3,16 @@ title: The title of my site
 description: Short description of my site's purpose
 show_downloads: false
 #google_analytics: [Your Google Analytics tracking ID]
+#page.path: ???
+is_user_page: true
+is_project_page: false
+owner_url: "https://github.com/leok7v"
+owner_name: "leok7v"
+license:
+    key": "mit",
+    name: "MIT License",
+    spdx_id: "MIT",
+    url: "https://api.github.com/licenses/mit"
+source:
+    branch: "master"
+    path: "/"
