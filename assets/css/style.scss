@@ -3,3 +3,8 @@
 
 @import "{{ site.theme }}";
 
+.header{
+  display:none;
+  padding-top:0px;
+  padding-bottom:0px;
+}
