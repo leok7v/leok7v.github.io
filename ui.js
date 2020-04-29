@@ -1,4 +1,4 @@
-(function (window, document) {
+function ui_init(window, document) {
 
     var layout     = document.getElementById('layout'),
         menu       = document.getElementById('menu'),
@@ -59,5 +59,68 @@
             removeClass(layout, "active");
         };
     }
+
+    layout.scrollIntoView(true);
+    
+};
+
+(function (window, document) {
+
+    function loaded(req, i, ext, text) {
+        if (req.readyState === XMLHttpRequest.DONE && 
+           (req.status == 0 || (req.status >= 200 && req.status < 400))) {
+            if (text == "") {
+                // nothing - done
+            } else if (ext == "md") {
+                let converter = new showdown.Converter({optionKey: 'value'});
+                let html = converter.makeHtml(text);
+                let div  = document.getElementById("page" + i + ".content");
+                if (div != null) {
+                    console.log("page" + i + ".content");
+                    /*
+                    'beforebegin': Before the element itself.
+                    'afterbegin': Just inside the element, before its first child.
+                    'beforeend': Just inside the element, after its last child.
+                    'afterend': After the element itself.
+                    */
+                    div.insertAdjacentHTML('beforeend', html);
+                    load_page(i + 1, "txt");
+                    return;
+                }
+            } else {
+                let mi = '<li class="pure-menu-item"><a href="#page' + i + 
+                         '" class="pure-menu-link">' + text + '</a></li>';
+                let contact = document.getElementById("contact");
+                contact.insertAdjacentHTML('beforebegin', mi);
+                let page = '<div id="page' + i + '"><div id="page' + i + 
+                            '.header" class="header"></div><div id="page' + i + 
+                            '.content" class="content"></div></div>';
+                let content = document.getElementById("content");
+                content.insertAdjacentHTML('beforeend', page);
+                let header = document.getElementById("page" + i + ".header");
+                if (header != null) {
+                    console.log("page" + i + ".header");
+                    header.insertAdjacentHTML('beforeend', "<h1>" + text + "</h1>");
+                    load_page(i, "md");
+                    return;
+                }
+            }
+        }
+        ui_init(this, this.document);
+    }
+
+    function load_page(i, ext) {
+        let req = new XMLHttpRequest();
+        req.onerror = function() { };
+        req.onloadend = function() { 
+            loaded(req, i, ext, req.responseText);
+        };
+        try { 
+            req.open("GET", "page" + i + "." + ext);
+            req.send();
+        } catch (e) { /* ignore 404 */ }
+    }
+
+    load_page(1, "txt");
     
 }(this, this.document));
