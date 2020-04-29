@@ -47,7 +47,6 @@ function ui_init(window, document) {
     };
 
     content.onclick = function(e) {
-        console.log("content.onclick");
         if (menu.className.indexOf('active') !== -1) {
             e.stopPropagation(); // stop dispatching to parents
             toggleAll(e);
