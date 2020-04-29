@@ -60,6 +60,7 @@ function ui_init(window, document) {
         };
     }
 
+    window.scrollTo(0,1);
     layout.scrollIntoView(true);
     
 };
