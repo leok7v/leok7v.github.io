@@ -1,3 +1,24 @@
+showdown.extension('targetlink', function() {
+    return [{
+        type: 'lang',
+        regex: /\[((?:\[[^\]]*]|[^\[\]])*)]\([ \t]*<?(.*?(?:\(.*?\).*?)?)>?[ \t]*((['"])(.*?)\4[ \t]*)?\)\{\:target=(["'])(.*)\6}/g,
+        replace: function(wholematch, linkText, url, a, b, title, c, target) {
+            console.log("replace url=" + url + " target=" + target);
+            var result = '<a href="' + url + '"';
+            if (typeof title != 'undefined' && title !== '' && title !== null) {
+                title = title.replace(/"/g, '&quot;');
+                title = showdown.helper.escapeCharacters(title, '*_', false);
+                result += ' title="' + title + '"';
+            }
+            if (typeof target != 'undefined' && target !== '' && target !== null) {
+                result += ' target="' + target + '"';
+            }
+            result += '>' + linkText + '</a>';
+            return result;
+        }
+    }];
+});
+
 function ui_init(window, document) {
 
     var layout     = document.getElementById('layout'),
@@ -77,13 +98,6 @@ function ui_init(window, document) {
                 let html = converter.makeHtml(text);
                 let div  = document.getElementById("page" + i + ".content");
                 if (div != null) {
-                    console.log("page" + i + ".content");
-                    /*
-                    'beforebegin': Before the element itself.
-                    'afterbegin': Just inside the element, before its first child.
-                    'beforeend': Just inside the element, after its last child.
-                    'afterend': After the element itself.
-                    */
                     div.insertAdjacentHTML('beforeend', html);
                     load_page(i + 1, "txt");
                     return;
@@ -96,11 +110,10 @@ function ui_init(window, document) {
                 let page = '<div id="page' + i + '"><div id="page' + i + 
                             '.header" class="header"></div><div id="page' + i + 
                             '.content" class="content"></div></div>';
-                let content = document.getElementById("content");
-                content.insertAdjacentHTML('beforeend', page);
+                let layout = document.getElementById("layout");
+                layout.insertAdjacentHTML('beforeend', page);
                 let header = document.getElementById("page" + i + ".header");
                 if (header != null) {
-                    console.log("page" + i + ".header");
                     header.insertAdjacentHTML('beforeend', "<h1>" + text + "</h1>");
                     load_page(i, "md");
                     return;
@@ -125,3 +138,4 @@ function ui_init(window, document) {
     load_page(1, "txt");
     
 }(this, this.document));
+

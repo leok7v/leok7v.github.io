@@ -7,7 +7,7 @@
  ],
  "theme_color":"#111111",
  "background_color":"#111111",
- "display":"standalone"
+ "display": "fullscreen",
  "start_url": "index.html",
  "orientation": "portrait"
 }
