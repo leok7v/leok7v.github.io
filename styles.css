@@ -25,6 +25,7 @@ body {
     left: 0;
     padding-left: 0;
 }
+
 #layout.active #menu {
     left: 150px;
     width: 150px;
@@ -40,7 +41,7 @@ body {
     padding: 0 3em;
     max-width: 800px;
     margin-bottom: 50px;
-    line-height: 1.6em;
+    line-height: 1.2em;
 }
 
 .header {
@@ -59,14 +60,7 @@ h1 {
     color: #585;
 }
 
-h2 {
-    padding: 0;
-    margin: 4pt 0 4pt 0;
-    font-weight: 300;
-    color: #A96;
-}
-
-h3 {
+h2, h3 {
     padding: 0;
     margin: 4pt 0 4pt 0;
     font-weight: 300;
@@ -76,11 +70,18 @@ h3 {
 h1 { font-size: 13pt; }
 h2 { font-size: 12pt; }
 h3 { font-size: 11pt; }
-p  { 
+
+p { 
     font-size: 10pt; 
     color: #DDC;
 }
 
+code, pre {
+    font-family: monospace,monospace;
+    font-size: 0.9em;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
 
 /* The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page. */

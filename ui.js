@@ -35,23 +35,32 @@ function ui_init(window, document) {
 
     function toggleAll(e) {
         var active = 'active';
-        e.preventDefault();  // do not do default action
         toggleClass(layout, active);
         toggleClass(menu, active);
         toggleClass(menuLink, active);
     }
 
+    function hljs_force_cpp() {
+        let code_items = document.getElementsByTagName("code");
+        for (let i = 0; i < code_items.length; i++) {
+            code_items.className = "hljs cpp"; // force C++
+        }
+    }
+ 
     menuLink.onclick = function (e) {
         e.stopPropagation(); // stop dispatching to parents
+        e.preventDefault();  // do not do default action
         toggleAll(e);
     };
 
     content.onclick = function(e) {
         if (menu.className.indexOf('active') !== -1) {
             e.stopPropagation(); // stop dispatching to parents
+            e.preventDefault();  // do not do default action
             toggleAll(e);
         }
     };
+
 
     for (i = 0; i < menu_items.length; i++) {
         menu_items[i].onclick = function(e) {
@@ -65,7 +74,8 @@ function ui_init(window, document) {
 
     window.scrollTo(0,1);
     layout.scrollIntoView(true);
-    
+    hljs.initHighlighting();
+    hljs_force_cpp();
 };
 
 (function (window, document) {
