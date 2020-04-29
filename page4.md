@@ -1,6 +1,4 @@
-# Headings (\# \#\# \#\#\# etc.)
-
-Page 4 (Headings need 4 = or -)
+Code Style
 ====
 
 Page 4 subheading 2 (Headings need 4 = or -)

@@ -1,30 +1,9 @@
-showdown.extension('targetlink', function() {
-    return [{
-        type: 'lang',
-        regex: /\[((?:\[[^\]]*]|[^\[\]])*)]\([ \t]*<?(.*?(?:\(.*?\).*?)?)>?[ \t]*((['"])(.*?)\4[ \t]*)?\)\{\:target=(["'])(.*)\6}/g,
-        replace: function(wholematch, linkText, url, a, b, title, c, target) {
-            console.log("replace url=" + url + " target=" + target);
-            var result = '<a href="' + url + '"';
-            if (typeof title != 'undefined' && title !== '' && title !== null) {
-                title = title.replace(/"/g, '&quot;');
-                title = showdown.helper.escapeCharacters(title, '*_', false);
-                result += ' title="' + title + '"';
-            }
-            if (typeof target != 'undefined' && target !== '' && target !== null) {
-                result += ' target="' + target + '"';
-            }
-            result += '>' + linkText + '</a>';
-            return result;
-        }
-    }];
-});
-
 function ui_init(window, document) {
 
     var layout     = document.getElementById('layout'),
         menu       = document.getElementById('menu'),
         menuLink   = document.getElementById('menuLink'),
-        content    = document.getElementById('main');
+        content    = document.getElementById('content');
         menu_items = document.getElementsByClassName('pure-menu-item');
 
     function removeClass(element, className) {
@@ -56,28 +35,32 @@ function ui_init(window, document) {
 
     function toggleAll(e) {
         var active = 'active';
-        e.preventDefault();
+        e.preventDefault();  // do not do default action
         toggleClass(layout, active);
         toggleClass(menu, active);
         toggleClass(menuLink, active);
     }
 
     menuLink.onclick = function (e) {
+        e.stopPropagation(); // stop dispatching to parents
         toggleAll(e);
-        toggleClass(this, "selected");
     };
 
     content.onclick = function(e) {
+        console.log("content.onclick");
         if (menu.className.indexOf('active') !== -1) {
+            e.stopPropagation(); // stop dispatching to parents
             toggleAll(e);
         }
     };
 
     for (i = 0; i < menu_items.length; i++) {
         menu_items[i].onclick = function(e) {
-            for (i = 0; i < menu_items.length; i++) { removeClass(menu_items[i], "pure-menu-selected"); }    
+            for (i = 0; i < menu_items.length; i++) { 
+                removeClass(menu_items[i], "pure-menu-selected"); 
+            }    
             toggleClass(this, "pure-menu-selected");
-            removeClass(layout, "active");
+            toggleAll(e);
         };
     }
 
@@ -88,36 +71,47 @@ function ui_init(window, document) {
 
 (function (window, document) {
 
+    let converter = new showdown.Converter();
+
+    function add_md(i, text) {
+        document.getElementById("page" + i + ".content").insertAdjacentHTML('beforeend', converter.makeHtml(text));
+    }
+
+    function add_label(i, text) {
+        let label = text;
+        let strings = text.split("|");
+        if (strings.length == 2) {
+            label = strings[0];
+            text = strings[1];
+        }
+        let mi = '<li class="pure-menu-item"><a href="#page' + i + 
+                 '" class="pure-menu-link">' + label + '</a></li>';
+        let contact = document.getElementById("contact");
+        contact.insertAdjacentHTML('beforebegin', mi);
+        let page = '<div id="page' + i + '"><div id="page' + i + 
+                    '.header" class="header"></div><div id="page' + i + 
+                    '.content" class="content"></div></div>';
+        let content = document.getElementById("content");
+        content.insertAdjacentHTML('beforeend', page);
+        let header = document.getElementById("page" + i + ".header");
+        header.insertAdjacentHTML('beforeend', "<h1>" + text + "</h1>");
+    }
+
     function loaded(req, i, ext, text) {
         if (req.readyState === XMLHttpRequest.DONE && 
            (req.status == 0 || (req.status >= 200 && req.status < 400))) {
             if (text == "") {
                 // nothing - done
+            } else if (ext == "txt") {
+                add_label(i, text);
+                load_page(i, "md");
+                return;
             } else if (ext == "md") {
-                let converter = new showdown.Converter({optionKey: 'value'});
-                let html = converter.makeHtml(text);
-                let div  = document.getElementById("page" + i + ".content");
-                if (div != null) {
-                    div.insertAdjacentHTML('beforeend', html);
-                    load_page(i + 1, "txt");
-                    return;
-                }
+                add_md(i, text);
+                load_page(i + 1, "txt");
+                return;
             } else {
-                let mi = '<li class="pure-menu-item"><a href="#page' + i + 
-                         '" class="pure-menu-link">' + text + '</a></li>';
-                let contact = document.getElementById("contact");
-                contact.insertAdjacentHTML('beforebegin', mi);
-                let page = '<div id="page' + i + '"><div id="page' + i + 
-                            '.header" class="header"></div><div id="page' + i + 
-                            '.content" class="content"></div></div>';
-                let layout = document.getElementById("layout");
-                layout.insertAdjacentHTML('beforeend', page);
-                let header = document.getElementById("page" + i + ".header");
-                if (header != null) {
-                    header.insertAdjacentHTML('beforeend', "<h1>" + text + "</h1>");
-                    load_page(i, "md");
-                    return;
-                }
+                console.log("invalid ext " + ext);
             }
         }
         ui_init(this, this.document);

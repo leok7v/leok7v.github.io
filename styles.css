@@ -54,29 +54,32 @@ body {
 
 h1 {
     padding: 0;
-    margin: 10pt 0 10pt 0;
+    margin: 4pt 0 4pt 0;
     font-weight: 300;
-    color: #DFD;
+    color: #585;
 }
 
 h2 {
     padding: 0;
-    margin: 10pt 0 10pt 0;
+    margin: 4pt 0 4pt 0;
     font-weight: 300;
-    color: #AA9;
+    color: #A96;
 }
 
 h3 {
     padding: 0;
-    margin: 10pt 0 10pt 0;
+    margin: 4pt 0 4pt 0;
     font-weight: 300;
-    color: #AA9;
+    color: #A96;
 }
 
 h1 { font-size: 13pt; }
 h2 { font-size: 12pt; }
 h3 { font-size: 11pt; }
-p  { font-size: 10pt; }
+p  { 
+    font-size: 10pt; 
+    color: #DDC;
+}
 
 
 /* The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
@@ -119,7 +122,7 @@ appears on the left side of the page. */
 /* Change color of the anchor links on hover/focus. */
 #menu .pure-menu li a:hover,
 #menu .pure-menu li a:focus {
-    background: #333;
+    background: #19A;
 }
 
 /* selected menu item `<li>`. */

@@ -1,42 +1,31 @@
+*"Knowledge is a process of piling up facts; wisdom lies in their simplification.”*
 
-Page 1 subheading 2 (Headings need 4 = or -)
+Objective
 ----
 
+I am always open to innovative and exciting software projects opportunities. I would love to contribute and solve challenging problems. Clarity, correctness, completeness, simplicity and robustness are my forever priorities in software design and implementation.
 
-Paragraphs are separated by a blank line.
+Clarity
+----
 
-Second paragraph: long long long long long long long long long
-long long long long long long long long long long long long long long long.
+Clear understanding of a problem in all it's intricacies leads to correct solution.
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
-look like:
+Correctness
+----
 
-  * this one
-  * that one
-  * the other one
+Correct solution is like a proven theorem. Once the proof is achieved further maintenance should be minimalistic to none.
 
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
-some text with a link <a href="http://www.zspace.com" target="_blank">zspace</a>
+Completeness
+----
 
-![zSpace VR](zspace.jpg)     click for  <a href="https://youtu.be/ecJdrs7d2MU" target="_blank">zSpace</a> video
+Code is not complete until it really solves the whole problem.
 
+Simplicity
+----
 
-Normal text **bold** then *italic*.
-Escape \* \` \< \_ \# \\ & more.
+"Simple can be harder than complex: you have to work hard to get your thinking clean to make it simple. But it's worth it in the end..."
 
-1. Order list
-- Unorder list ( - or + )
+Robustness
+----
 
-code: `a === a`
-
-> blockquote
-
-URL: [Edditoria][1] | image: ![2][]
-
-[1]: https://edditoria.blogspot.com
-[2]: https://avatars0.githubusercontent.com/u/2234073?v=3&s=40
-
-<!-- please comment -->
-
-# Enjoy! :)
+Code does not run in isolation. There are always some assumptions of ever changing environment the code should be always ready to deal with.
