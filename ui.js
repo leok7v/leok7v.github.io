@@ -43,7 +43,8 @@ function ui_init(window, document) {
     function hljs_force_cpp() {
         let code_items = document.getElementsByTagName("code");
         for (let i = 0; i < code_items.length; i++) {
-            code_items.className = "hljs cpp"; // force C++
+            code_items[i].className = "lang-cpp"; // force C++
+            console.log("code_items[" + i + "].className=" + code_items[i].className);
         }
     }
  
@@ -74,8 +75,8 @@ function ui_init(window, document) {
 
     window.scrollTo(0,1);
     layout.scrollIntoView(true);
-    hljs.initHighlighting();
     hljs_force_cpp();
+    hljs.initHighlighting();
 };
 
 (function (window, document) {
