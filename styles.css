@@ -3,6 +3,13 @@ body {
     background-color: #111;
 }
 
+a { color: #AEE; }
+
+a:hover,
+a:focus {
+    color: #ABC;
+}
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -23,7 +30,7 @@ body {
 #layout {
     position: relative;
     left: 0;
-    padding-left: 0;
+    padding-left: 1.5em;
 }
 
 #layout.active #menu {
@@ -58,17 +65,17 @@ body {
     border-top: 1px solid #222;
 }
 
-h1 {
+h1, h2, h3 {
     padding: 0;
     margin: 4pt 0 4pt 0;
     font-weight: 300;
-    color: #585;
+}
+
+h1 {
+    color: #565;
 }
 
 h2, h3 {
-    padding: 0;
-    margin: 4pt 0 4pt 0;
-    font-weight: 300;
     color: #A96;
 }
 
@@ -76,7 +83,7 @@ h1 { font-size: 13pt; }
 h2 { font-size: 12pt; }
 h3 { font-size: 11pt; }
 
-p { 
+p, li {
     font-size: 10pt; 
     color: #DDC;
 }
@@ -129,6 +136,10 @@ appears on the left side of the page. */
 #menu .pure-menu li a:hover,
 #menu .pure-menu li a:focus {
     background: #19A;
+}
+
+#menu .pure-menu li {
+    font-size: 13pt;
 }
 
 /* selected menu item `<li>`. */
@@ -211,8 +222,8 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 @media (min-width: 48em) {
     .header,
     .content {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
     }
     #layout {
         padding-left: 150px; /* left col width "#menu" */

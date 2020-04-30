@@ -126,7 +126,9 @@ function ui_init(window, document) {
 
 (function (window, document) {
 
-    let converter = new showdown.Converter();
+    let converter = new showdown.Converter({
+        tables: true, tablesHeaderId: true, strikethrough: true, parseImgDimensions: true, tasklists: true, encodeEmails: true
+    });
 
     function add_md(i, text) {
         document.getElementById("page" + i + ".content").insertAdjacentHTML('beforeend', converter.makeHtml(text));

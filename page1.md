@@ -1,31 +1,16 @@
-*"Knowledge is a process of piling up facts; wisdom lies in their simplification.”*
+<img align="right" width="128" height="128" src="leo.jpg">
 
-Objective
-----
 
-I am always open to innovative and exciting software projects opportunities. I would love to contribute and solve challenging problems. Clarity, correctness, completeness, simplicity and robustness are my forever priorities in software design and implementation.
+ - [x] Embedded Android NDK/SDK
+ - [x] C, C++, Java, JavaScript, assembler, SIMD
+ - [x] RTOS, Linux, MacOS, Windows
+ - [x] OpenGL, GLES, GLSL
+ - [x] gcc, clang, cl.exe 
+ - [x] msvc, gdb, printf
+ - [x] bash, .bat
 
-Clarity
-----
+[Objective](#page2) | [Resume] (#page3) | [Contact](mailto:leo.kuznetsov@gmail.com) | *"Knowledge is a process of piling up facts; wisdom lies in their simplification.”*
 
-Clear understanding of a problem in all it's intricacies leads to correct solution.
+<img align="right" width="128" height="43" src="open-for-business.png">
 
-Correctness
-----
 
-Correct solution is like a proven theorem. Once the proof is achieved further maintenance should be minimalistic to none.
-
-Completeness
-----
-
-Code is not complete until it really solves the whole problem.
-
-Simplicity
-----
-
-"Simple can be harder than complex: you have to work hard to get your thinking clean to make it simple. But it's worth it in the end..."
-
-Robustness
-----
-
-Code does not run in isolation. There are always some assumptions of ever changing environment the code should be always ready to deal with.

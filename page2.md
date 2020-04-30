@@ -1,42 +1,26 @@
+I am always open to innovative and exciting software projects opportunities. I would love to contribute and solve challenging problems. Clarity, correctness, completeness, simplicity and robustness are my forever priorities in software design and implementation.
 
-Page 2 subheading 2 (Headings need 4 = or -)
+Clarity
 ----
 
+Clear understanding of a problem in all it's intricacies leads to correct solution.
 
-Paragraphs are separated by a blank line.
+Correctness
+----
 
-Second paragraph: long long long long long long long long long
-long long long long long long long long long long long long long long long.
+Correct solution is like a proven theorem. Once the proof is achieved further maintenance should be minimalistic to none.
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
-look like:
+Completeness
+----
 
-  * this one
-  * that one
-  * the other one
+Code is not complete until it really solves the whole problem.
 
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
-some text with a link <a href="http://www.zspace.com" target="_blank">zspace</a>
+Simplicity
+----
 
-![zSpace VR](zspace.jpg)     click for  <a href="https://youtu.be/ecJdrs7d2MU" target="_blank">zSpace</a> video
+"Simple can be harder than complex: you have to work hard to get your thinking clean to make it simple. But it's worth it in the end..."
 
+Robustness
+----
 
-Normal text **bold** then *italic*.
-Escape \* \` \< \_ \# \\ & more.
-
-1. Order list
-- Unorder list ( - or + )
-
-code: `a === a`
-
-> blockquote
-
-URL: [Edditoria][1] | image: ![2][]
-
-[1]: https://edditoria.blogspot.com
-[2]: https://avatars0.githubusercontent.com/u/2234073?v=3&s=40
-
-<!-- please comment -->
-
-# Enjoy! :)
+Most of the code never runs in isolation. There are always some assumptions of ever changing environment the code should be always ready to deal with.

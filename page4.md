@@ -20,7 +20,8 @@ Escape \* \` \< \_ \# \\ & more.
 1. Order list
 - Unorder list ( - or + )
 
-code: `a === a`
+good: `a === a`
+bad: ~~`a == a`~~
 
 > blockquote
 
