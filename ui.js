@@ -44,7 +44,6 @@ function ui_init(window, document) {
         let code_items = document.getElementsByTagName("code");
         for (let i = 0; i < code_items.length; i++) {
             code_items[i].className = "lang-cpp"; // force C++
-            console.log("code_items[" + i + "].className=" + code_items[i].className);
         }
     }
  
@@ -73,10 +72,34 @@ function ui_init(window, document) {
         };
     }
 
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 1);
+    }
+    
     window.scrollTo(0,1);
     layout.scrollIntoView(true);
     hljs_force_cpp();
     hljs.initHighlighting();
+
+    var x = 100;
+    var click_here = document.getElementById("click.here");
+
+    var move_click = function() {
+        x -= 1;
+        if (click_here != null) {
+            click_here.style.position = "absolute";
+            click_here.style.top  = 0 + "px";
+            click_here.style.left = x + "px";
+            if (x > 40) { 
+                window.setTimeout(move_click, 20) 
+            } else { 
+                click_here.parentNode.removeChild(click_here); 
+            }
+        }    
+    };
+
+    window.setTimeout(move_click, 20);
+
 };
 
 (function (window, document) {

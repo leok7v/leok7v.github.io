@@ -38,10 +38,16 @@ body {
 /* The content `<div>` is where all your content goes. */
 .content {
     margin: 0 auto;
-    padding: 0 3em;
+    padding: 0 1em;
     max-width: 800px;
     margin-bottom: 50px;
     line-height: 1.2em;
+}
+
+.click_here {
+    position: absolute;
+    left: -999px;
+    top: -999px;
 }
 
 .header {
@@ -206,8 +212,8 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 @media (min-width: 48em) {
     .header,
     .content {
-        padding-left: 3em;
-        padding-right: 3em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     #layout {
         padding-left: 150px; /* left col width "#menu" */
