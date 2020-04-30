@@ -43,16 +43,58 @@ function ui_init(window, document) {
     function hljs_force_cpp() {
         let code_items = document.getElementsByTagName("code");
         for (let i = 0; i < code_items.length; i++) {
-            // showdown allows ~~~python
             if (code_items[i].className.indexOf('lang-') === -1 && 
                 code_items[i].className.indexOf('language-') === -1) {
                 addClass(code_items[i], "lang-cpp"); // default language is C
             } else {
- //             console.log("code[" + i + "]=" + code_items[i].className);
+                // already has specific language id set e.g.  ~~~python
             }
         }
     }
  
+    function add_menu_items_click_listeners() {
+        for (i = 0; i < menu_items.length; i++) {
+            menu_items[i].onclick = function(e) {
+                for (i = 0; i < menu_items.length; i++) { 
+                    removeClass(menu_items[i], "pure-menu-selected"); 
+                }    
+                toggleClass(this, "pure-menu-selected");
+                toggleAll(e);
+                let href = this.getElementsByTagName("A")[0].href;
+                let page = document.getElementById(href.split("#")[1]);
+                page.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                    inline: "nearest"
+                });
+            };
+        }
+    }
+
+    function click_here_animation() {
+        var opacity = 100;
+        var x = 60;
+        var click_here = document.getElementById("click_here");
+        var move_click = function() {
+            x -= 1;
+            opacity -= 4;
+            if (click_here !== null) {
+                click_here.style.position = "absolute";
+                click_here.style.top  = 0 + "px";
+                click_here.style.left = x + "px";
+                click_here.style.opacity = opacity + "%";
+                click_here.style.visibility = "visible";
+                if (x > 40) { 
+                    window.setTimeout(move_click, 50) 
+                } else { 
+                    click_here.visibility = "hidden";
+                    click_here.parentNode.removeChild(click_here); 
+                }
+            }    
+        };
+        window.setTimeout(move_click, 50);
+    }
+
     menuLink.onclick = function (e) {
         e.stopPropagation(); // stop dispatching to parents
         e.preventDefault();  // do not do default action
@@ -67,17 +109,7 @@ function ui_init(window, document) {
         }
     };
 
-
-    for (i = 0; i < menu_items.length; i++) {
-        menu_items[i].onclick = function(e) {
-            for (i = 0; i < menu_items.length; i++) { 
-                removeClass(menu_items[i], "pure-menu-selected"); 
-            }    
-            toggleClass(this, "pure-menu-selected");
-            toggleAll(e);
-            document.scrollIntoView(this);
-        };
-    }
+    
 
     window.onbeforeunload = function () {
         window.scrollTo(0, 1);
@@ -87,32 +119,8 @@ function ui_init(window, document) {
     layout.scrollIntoView(true);
     hljs_force_cpp();
     hljs.initHighlighting();
-
-    var opacity = 100;
-    var x = 60;
-    var click_here = document.getElementById("click_here");
-
-    var move_click = function() {
-        x -= 1;
-        opacity -= 4;
-        if (click_here !== null) {
-            click_here.style.position = "absolute";
-            click_here.style.top  = 0 + "px";
-            click_here.style.left = x + "px";
-//          console.log("click_here.style.opacity=" + click_here.style.opacity);
-            click_here.style.opacity = opacity + "%";
-            click_here.style.visibility = "visible";
-            if (x > 40) { 
-//              console.log("x=" + x);
-                window.setTimeout(move_click, 50) 
-            } else { 
-                click_here.visibility = "hidden";
-                click_here.parentNode.removeChild(click_here); 
-            }
-        }    
-    };
-
-    window.setTimeout(move_click, 50);
+    add_menu_items_click_listeners();
+    click_here_animation();
 
 };
 
@@ -158,7 +166,7 @@ function ui_init(window, document) {
                 load_page(i + 1, "txt");
                 return;
             } else {
-                console.log("invalid ext " + ext);
+                console.log("invalid: " + ext);
             }
         }
         ui_init(this, this.document);
