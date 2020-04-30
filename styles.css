@@ -46,8 +46,6 @@ body {
 
 .click_here {
     position: absolute;
-    left: -999px;
-    top: -999px;
 }
 
 .header {

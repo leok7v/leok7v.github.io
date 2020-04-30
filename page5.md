@@ -52,6 +52,8 @@ define foobar() {
 (which makes copying & pasting easier). You can optionally mark the
 delimited block for Pandoc to syntax highlight it:
 
+Python:
+
 ~~~python
 import time
 # Quick, count to ten!
@@ -61,6 +63,12 @@ for i in range(10):
     print i
 ~~~
 
+JavaScript:
+
+~~~javascript
+function ui_init(window, document) {
+}(this, this.document));
+~~~
 
 
 ### An h3 header ###

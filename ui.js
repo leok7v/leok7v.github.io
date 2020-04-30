@@ -22,7 +22,7 @@ function ui_init(window, document) {
     }
     
     function toggleClass(element, className) {
-        if (element.className != null) {
+        if (element.className !== null) {
             var classes = element.className.split(/\s+/);
             var n = classes.length;
             for (let i = 0; i < n; i++) {
@@ -43,7 +43,13 @@ function ui_init(window, document) {
     function hljs_force_cpp() {
         let code_items = document.getElementsByTagName("code");
         for (let i = 0; i < code_items.length; i++) {
-            code_items[i].className = "lang-cpp"; // force C++
+            // showdown allows ~~~python
+            if (code_items[i].className.indexOf('lang-') === -1 && 
+                code_items[i].className.indexOf('language-') === -1) {
+                addClass(code_items[i], "lang-cpp"); // default language is C
+            } else {
+ //             console.log("code[" + i + "]=" + code_items[i].className);
+            }
         }
     }
  
@@ -69,6 +75,7 @@ function ui_init(window, document) {
             }    
             toggleClass(this, "pure-menu-selected");
             toggleAll(e);
+            document.scrollIntoView(this);
         };
     }
 
@@ -81,24 +88,29 @@ function ui_init(window, document) {
     hljs_force_cpp();
     hljs.initHighlighting();
 
-    var x = 100;
-    var click_here = document.getElementById("click.here");
+    var opacity = 100;
+    var x = 60;
+    var click_here = document.getElementById("click_here");
 
     var move_click = function() {
         x -= 1;
-        if (click_here != null) {
+        opacity -= 4;
+        if (click_here !== null) {
             click_here.style.position = "absolute";
             click_here.style.top  = 0 + "px";
             click_here.style.left = x + "px";
+//          console.log("click_here.style.opacity=" + click_here.style.opacity);
+            click_here.style.opacity = opacity + "%";
             if (x > 40) { 
-                window.setTimeout(move_click, 20) 
+//              console.log("x=" + x);
+                window.setTimeout(move_click, 50) 
             } else { 
                 click_here.parentNode.removeChild(click_here); 
             }
         }    
     };
 
-    window.setTimeout(move_click, 20);
+    window.setTimeout(move_click, 50);
 
 };
 
@@ -113,7 +125,7 @@ function ui_init(window, document) {
     function add_label(i, text) {
         let label = text;
         let strings = text.split("|");
-        if (strings.length == 2) {
+        if (strings.length === 2) {
             label = strings[0];
             text = strings[1];
         }
@@ -132,14 +144,14 @@ function ui_init(window, document) {
 
     function loaded(req, i, ext, text) {
         if (req.readyState === XMLHttpRequest.DONE && 
-           (req.status == 0 || (req.status >= 200 && req.status < 400))) {
-            if (text == "") {
+           (req.status === 0 || (req.status >= 200 && req.status < 400))) {
+            if (text === "") {
                 // nothing - done
-            } else if (ext == "txt") {
+            } else if (ext === "txt") {
                 add_label(i, text);
                 load_page(i, "md");
                 return;
-            } else if (ext == "md") {
+            } else if (ext === "md") {
                 add_md(i, text);
                 load_page(i + 1, "txt");
                 return;
