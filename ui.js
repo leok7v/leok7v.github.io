@@ -101,10 +101,12 @@ function ui_init(window, document) {
             click_here.style.left = x + "px";
 //          console.log("click_here.style.opacity=" + click_here.style.opacity);
             click_here.style.opacity = opacity + "%";
+            click_here.style.visibility = "visible";
             if (x > 40) { 
 //              console.log("x=" + x);
                 window.setTimeout(move_click, 50) 
             } else { 
+                click_here.visibility = "hidden";
                 click_here.parentNode.removeChild(click_here); 
             }
         }    
