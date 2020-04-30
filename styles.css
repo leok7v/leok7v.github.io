@@ -166,14 +166,10 @@ appears on the left side of the page. */
 
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
 
-/*
-The button to open/close the Menu is custom-made and not part of Pure. Here's
-how it works:
-*/
+/* The button to open/close the Menu is custom-made and not part of Pure. */
 
 /*
-`.menu-link` represents the responsive menu toggle that shows/hides on
-small screens.
+`.menu-link` represents the responsive menu toggle that shows/hides on small screens.
 */
 .menu-link {
     position: fixed;
@@ -184,7 +180,7 @@ small screens.
     background: rgba(1, 1, 1, 0.3);
     font-size: 5pt; /* change this value to increase/decrease button size */
     z-index: 10;
-    width: 2em;
+    width: 3em;
     height: auto;
     padding: 2.1em 1.6em;
 }
