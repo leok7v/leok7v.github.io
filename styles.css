@@ -42,11 +42,15 @@ a:focus {
     left: 150px;
 }
 
+img {
+    max-width: 80%;
+}
+
 /* The content `<div>` is where all your content goes. */
 .content {
     margin: 0 auto;
     padding: 0 1em;
-    max-width: 800px;
+    max-width: 1024px;
     margin-bottom: 50px;
     line-height: 1.2em;
 }
