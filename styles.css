@@ -43,7 +43,7 @@ a:focus {
 }
 
 img {
-    max-width: 80%;
+    max-width: 100%;
 }
 
 /* The content `<div>` is where all your content goes. */
@@ -90,6 +90,7 @@ h3 { font-size: 11pt; }
 p, li {
     font-size: 10pt; 
     color: #DDC;
+    max-width: 600pt;
 }
 
 code, pre {

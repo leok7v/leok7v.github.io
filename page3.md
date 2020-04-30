@@ -1,6 +1,12 @@
 Since 2014 I work for <a href="http://www.zspace.com" target="_blank">zSpace</a> Inc.
 as a principle software engineer of system software team.
 
+My team and me are responsible for multiple camera head tracking algorithms and driver
+integration of stylus IMU algorithms, poses triangulation and delivering 3D data to
+end user application written in Unity 3D and/or OpenGL and other GL frameworks via C API.
+
+System software also supports h/w manufacturing process, cameras calibration, overall components testing. 
+
 During my course of duty I have:
  - [x] re-implemented ~~250,000 lines of C++~ code (Windows only, R&D quality, ridden with STL/ATL/MFC)
  - [x] reimplemented same functionality in ~30KLoC of pure C99 portable code
