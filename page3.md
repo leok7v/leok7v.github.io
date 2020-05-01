@@ -50,6 +50,11 @@ gihub contributions (commits):
 ![2018-punch-card](2018-punch-card.png)
 ![2017-punch-card](2017-punch-card.png)
 
-----------------
+zSpace in action video
+---
 
-![zSpace VR](zspace.jpg)     click for  <a href="https://youtu.be/ecJdrs7d2MU" target="_blank">zSpace</a> video
+click to watch (96 seconds):
+
+<a href="https://youtu.be/ecJdrs7d2MU" target="_blank">
+![zSpace VR](zspace.jpg)
+</a>
