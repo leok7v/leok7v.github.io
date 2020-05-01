@@ -14,8 +14,9 @@
 I hate writing resume and love writing code (and even debugging it).
 I have been writing code for 40+ years.
 So I made a treaty with myself and allowed myself to put together simple 
-JavaScript client only `.md` to `.html` generating code that allows me to write
-the rest of resume in markdown and `vi`.
+JavaScript client only `.md` to `.html` 
+generating <a href="https://github.com/leok7v/leok7v.github.io/blob/master/ui.js" target="_blank">script</a> that 
+allowed to write the rest of the resume in markdown and `vi`.
 
 <img align="right" width="128" height="43" src="open-for-business.png">
 
@@ -29,4 +30,4 @@ Notable employment history:
 
 Education:
 ---
- * MS Math and Computer science from Novosibirsk University (USSR 1980-85)
+ * MS in Math and CS from Novosibirsk University (USSR 1980-85)
