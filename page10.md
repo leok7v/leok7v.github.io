@@ -23,14 +23,6 @@ Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
 in chapters 12--14"). Three dots ... will be converted to an ellipsis.
 Unicode is supported. ☺
 
-
-<img align="right" width="128" height="128" src="leo.jpg">
-
-| h1    |    h2   |      h3 |
-|:------|:-------:|--------:|
-| 100   | [a][1]  | ![b][2] |
-| *foo* | **bar** | ~~baz~~ |
-
 ~~strikethrough~~
 
  - [x] This task is done
@@ -166,7 +158,7 @@ Here's a "line block":
 
 and images can be specified like so:
 
-![Peace](android-chrome-192x192.png "Peace")
+![Peace](android-chrome-192x192.png =32x32)
 
 Inline math equations go in like so: $\omega = d\phi / dt$. Display
 math should get its own line and be put in in double-dollarsigns:
