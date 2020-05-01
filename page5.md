@@ -34,5 +34,23 @@ Two years later in 2007 <a href="https://en.wikipedia.org/wiki/Google_Desktop#Se
 confirmed outside of the company. I was no longer with the company to utter "I've told you so...".
 In 2011 the GDS has been discontinued.
 
+ClickStar Inc
+---
+
+In 2006-2008 I was involved with Morgan Freeman's early (way to early!) pre-Netflix startup.
+
+*"In 2006 <a href="https://en.wikipedia.org/wiki/ClickStar" target="_blank">ClickStar</a> became 
+the first company in motion picture history to offer a legitimate motion picture download, while 
+the film was still playing in theaters."*
+
+Completely re-engineered Content Download Manager (CDM) solution to allow seamless installation experience from variety of browsers. Reduced CDM size from 15MB to under 1MB. Implemented Windows Vista session communication RPC like mechanism to allow downloads to continue after the user has logged off. Enabled multiuser scenario for the CDM and the rest of infotainment code.  
 
 
+Blurb Inc (2005–2006)
+---
+
+I was team lead of Desktop client team at <a href="https://www.blurb.com/" target="_blank">Blurb Inc.</a>
+
+Designed implemented from scratch and successfully released original version of BookSmart application for Windows and Macintosh platforms. BookMaker is desktop self-publishing automation tool that provides significantly simplified experience for non-advanced users for creating books, photo albums and other print on demand production (comparing e.g. to Open Office). Similar to Apple iPhoto. 
+Lead a team of 3 software developers and 2 test engineers.
+Implemented Java/Swing UI code, complex page layout algorithms, servers communication layer.
