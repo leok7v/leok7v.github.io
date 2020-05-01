@@ -8,12 +8,14 @@ end user application written in Unity 3D and/or OpenGL and other GL frameworks v
 System software also supports h/w manufacturing process, cameras calibration, overall components testing. 
 
 During my course of duty I have:
- - [x] re-implemented ~~250,000 lines of C++~ code (Windows only, R&D quality, ridden with STL/ATL/MFC)
- - [x] reimplemented same functionality in ~30KLoC of pure C99 portable code
+ - [x] re-implemented ~~250,000~~ lines of C++ code (Windows only, R&D quality, ridden with STL/ATL/MFC)
+ - [x] implemented same functionality in ~30KLoC of pure C99 portable code
+ - [x] reworked ~~30,000~~+ lines of OpenCV based C++ triangulation algorithm to **~3,000** LoCs 
  - [x] improved binary code footprint from 500MB to approximately 5MB
  - [x] improved performance from 97% of system CPU utilization to less then 5%
  - [x] reduced build time from 50 minutes to 2 minutes
  - [x] actively maintained several github source code repositories
+ - [x] responsible for over 60 posix and Win32 projects
  - [x] performed several thousands commits per year and many hundreds code reviews
  - [x] developed new algorithms for high performance camera blobs detection 
  - [x] assisted porting those algorithms to FPGA
@@ -22,8 +24,9 @@ During my course of duty I have:
  - [x] implemented native code for AWS S3 analytics data uploads/downloads 
  - [x] resolved problems with oversea hardware manufactures
  - [x] implemented posix complaint hardware tests on both Linux (Embedded Android) and Windows
+ - [x] implemented some end user facing UI applications
  - [x] resolved problems with Microsoft and Google related to Windows and Android codebases
- - [x] contributed code to some open source projects
+ - [x] contributed code to open source projects
  - [x] mentored junior developers
  - [x] actively collaborated and provided fixes for issues in other team high level projects
  - [x] contributed code to some open source projects

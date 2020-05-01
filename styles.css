@@ -10,6 +10,11 @@ a:focus {
     color: #ABC;
 }
 
+a:link, a:visited { text-decoration: none; }
+
+
+a:hover, a:active { text-decoration: underline; }
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -76,10 +81,11 @@ h1, h2, h3 {
 }
 
 h1 {
-    color: #565;
+    color: #9B9;
 }
 
 h2, h3 {
+    padding-top: 0.25em;
     color: #A96;
 }
 
@@ -121,6 +127,7 @@ appears on the left side of the page. */
     color: #999;
     border: none;
     padding: 0.6em 0 0.6em 0.6em;
+    text-decoration: none;
 }
 
 /* Remove all background/borders, since we are applying them to #menu. */
