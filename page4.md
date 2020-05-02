@@ -6,7 +6,7 @@ The goal of the project was early bring up
 of <a href="https://en.wikipedia.org/wiki/JPEG_XT" target="_blank">Dolby JPEG XT</a> HDR 
 technology to mobile Android platform.
 
-I personally accredited and implemented major part of the JPEG HDR pipeline.
+I personally designed and implemented major part of the JPEG HDR pipeline.
 As a member of development team I collaborated with several mobile platform manufactures 
 to deploy the pipeline on variety of development boards and end user Android devices.
 
