@@ -1,5 +1,5 @@
+<div align="center"><small>If Internet still exist most recent version is here: <a href="https://leok7v.github.io">https://leok7v.github.io</a></small></div>
 <img align="right" width="128" height="128" src="leo.jpg">
-
 
  - [x] Embedded Android NDK/SDK
  - [x] C, C++, Java, JavaScript, assembler, SIMD
@@ -9,7 +9,7 @@
  - [x] msvc, gdb, printf
  - [x] bash, .bat
 
-[Objective](#page2) | [Resume] (#page3) | [Contact](mailto:leo.kuznetsov@gmail.com) | *"Knowledge is a process of piling up facts; wisdom lies in their simplification.”*
+[Objective](#page2) | [Resume] (#page3) | [Contact](mailto:leo.kuznetsov@gmail.com) 
 
 I hate writing resume and love writing code (and even debugging it).
 I have been writing code for 40+ years.
