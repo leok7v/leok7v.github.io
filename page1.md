@@ -1,15 +1,18 @@
-<div align="center"><small>If Internet still exists most recent version is here: <a href="https://leok7v.github.io">https://leok7v.github.io</a></small></div>
+<div align="center"><small>If Internet is still the thing most recent version is here: <a href="https://leok7v.github.io">https://leok7v.github.io</a></small></div>
 <img align="right" width="128" height="128" src="leo.jpg">
 
  - [x] Embedded Android NDK/SDK
  - [x] C, C++, Java, JavaScript, assembler, SIMD
- - [x] RTOS, Linux, MacOS, Windows
+ - [x] IoT, RTOS, Linux, MacOS, Windows
  - [x] OpenGL, GLES, GLSL
  - [x] gcc, clang, cl.exe 
  - [x] msvc, gdb, printf
  - [x] bash, .bat
 
-[Objective](#page2) | [Resume] (#page3) | [Contact](mailto:leo.kuznetsov@gmail.com) 
+
+
+[Objective](#page2) | [Resume] (#page3) | [Contact](mailto:leo.kuznetsov@gmail.com) | Use &#8984;P 
+or <span class="keyboard-key nowrap">Ctrl</span>+P `Save As...` to produce `PDF` version of this résumé.
 
 I hate writing résumés and love writing code (and even debugging it).
 I have been coding for 40+ years.
