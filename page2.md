@@ -1,14 +1,14 @@
-I am always open to innovative and exciting software projects opportunities. I would love to contribute and solve challenging problems. Clarity, correctness, completeness, simplicity and robustness are my forever priorities in software design and implementation.
+I am always open to innovative and exciting software project opportunities. I would love to contribute and solve challenging problems. Clarity, correctness, completeness, simplicity, and robustness are my forever priorities in software design and implementation.
 
 Clarity
 ----
 
-Clear understanding of a problem in all it's intricacies leads to correct solution.
+Clear understanding of a problem in all its intricacies leads to the correct solution.
 
 Correctness
 ----
 
-Correct solution is like a proven theorem. Once the proof is achieved further maintenance should be minimalistic to none.
+Correct solution is like a proven theorem. Once the proof is achieved, further maintenance should be minimalistic to none.
 
 Completeness
 ----
@@ -23,4 +23,4 @@ Simplicity
 Robustness
 ----
 
-Most of the code never runs in isolation. There are always some assumptions of ever changing environment the code should be always ready to deal with.
+Most of the code never runs in isolation. There are always some assumptions of ever-changing environment the code should be ready to deal with.
