@@ -222,6 +222,70 @@ appears on the left side of the page. */
 }
 
 
+/*
+ CSS for the main interaction
+*/
+.accordion > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+
+.accordion label {
+  display: block;
+}
+
+.accordion {
+  margin-bottom: 1em;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+}
+
+.accordion .handle {
+  line-height: 1.2em;
+}
+
+.accordion label {
+  cursor: pointer;
+}
+
+.accordion label:hover,
+.accordion label:focus {
+}
+
+.accordion .handle label:before {
+  content: "\0000BB";
+  transform: rotate(0deg) translateX(0);
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 1.556em;
+  vertical-align: middle;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .handle label:before {
+  content: "\0000BB";
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.accordion {
+  max-width: 65em;
+}
+
+.accordion p:last-child {
+  margin-bottom: 0;
+}
+
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
 
 /*

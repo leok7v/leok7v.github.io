@@ -52,5 +52,16 @@ gihub contributions (commits):
 ![2018-punch-card](2018-punch-card.png)
 ![2017-punch-card](2017-punch-card.png)
 
-<div style="align: center; padding-left: 18pt;"><iframe width="280" height="153" src="https://www.youtube.com/embed/-jsNH-H60io?mute=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<section class="accordion">
+  <input type="checkbox" name="collapse" id="handle1">
+  <p class="handle">
+    <label for="handle1">zSpace demo video</label>
+  <p>
+  <div class="content">
+    <div style="align: center; padding-left: 18pt;">
+        <iframe width="280" height="153"  src="https://www.youtube.com/embed/-jsNH-H60io?rel=0&amp;autoplay=0&mute=1" 
+         frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    </div>
+  </div>
+</section>
 
