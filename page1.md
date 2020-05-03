@@ -1,4 +1,4 @@
-<div align="center"><small>If Internet still exist most recent version is here: <a href="https://leok7v.github.io">https://leok7v.github.io</a></small></div>
+<div align="center"><small>If Internet still exists most recent version is here: <a href="https://leok7v.github.io">https://leok7v.github.io</a></small></div>
 <img align="right" width="128" height="128" src="leo.jpg">
 
  - [x] Embedded Android NDK/SDK
