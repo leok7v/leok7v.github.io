@@ -23,7 +23,7 @@ markdown and `vi`.
 Notable employment history:
 ---
 
- * Dolby Labs (mobile jpeg HDR)
+ * Dolby Labs (mobile JPEG HDR)
  * AT&T (Yellow Pages - YP Android - first ever AT&T app on Android)
  * Google (Desktop Search - didn't like it, quit)
  * WindRiver Systems (VxWorks, IDE, debugger)
