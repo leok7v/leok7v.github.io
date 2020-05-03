@@ -12,7 +12,7 @@
 
 
 [Objective](#page2) | [Resume] (#page3) | [Contact](mailto:leo.kuznetsov@gmail.com) | Use &#8984;P 
-or <span class="keyboard-key nowrap">Ctrl</span>+P `Save As...` to produce `PDF` version of this résumé.
+or <span class="keyboard-key nowrap">Ctrl</span>+P `Save As...` to produce <a id="print">`PDF`</a> version of this résumé.
 
 I hate writing résumés and love writing code (and even debugging it).
 I have been coding for 40+ years.

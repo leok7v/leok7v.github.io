@@ -111,7 +111,9 @@ function ui_init(window, document) {
         }
     };
 
-    
+    document.getElementById("print").onclick = function() {
+        window.print();
+    }
 
     window.onbeforeunload = function () {
         window.scrollTo(0, 1);
