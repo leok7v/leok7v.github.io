@@ -307,6 +307,9 @@ appears on the left side of the page. */
     font-size: 0.85em;
 }
 
+#mailto {
+    color: #fdd;
+}
 
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
 

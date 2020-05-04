@@ -1,5 +1,8 @@
-<div align="center"><small>If Internet is still the thing most recent version is here: <a href="https://leok7v.github.io">https://leok7v.github.io</a></small></div>
-<img align="right" width="128" height="128" src="leo.jpg">
+<small>
+<div align="center">If Internet is still the thing most recent version is here: <a href="https://leok7v.github.io">https://leok7v.github.io</a></div>
+<a id="mailto" href="mailto:leo.kuznetsov@gmail.com">mailto:leo.kuznetsov@gmail.com</a>
+</small>
+<a href="mailto:leo.kuznetsov@gmail.com"><img align="right" width="128" height="128" src="leo.jpg"></a>
 
  - [x] Embedded Android NDK/SDK
  - [x] C, C++, Java, JavaScript, assembler, SIMD
@@ -10,8 +13,7 @@
  - [x] bash, .bat
 
 
-
-[Objective](#page2) | [Resume] (#page3) | [Contact](mailto:leo.kuznetsov@gmail.com) | Use &#8984;P 
+[Objective](#page2) | [Resume] (#page3) | Use &#8984;P 
 or <span class="keyboard-key nowrap">Ctrl</span>+P `Save As...` to produce <a id="print">`PDF`</a> version of this résumé.
 
 I hate writing résumés and love writing code (and even debugging it).
