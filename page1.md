@@ -13,8 +13,8 @@
  - [x] bash, .bat
 
 
-[Objective](#page2) | [Resume] (#page3) | Use &#8984;P 
-or <span class="keyboard-key nowrap">Ctrl</span>+P `Save As...` to produce <a id="print">`PDF`</a> version of this résumé.
+[Objective](#page2) | [Resume] (#page3) | Use <a id="print">&#8984;P 
+or <span class="keyboard-key nowrap">Ctrl</span>+P</a> `Save As PDF...` for `pdf` version of this résumé.
 
 I hate writing résumés and love writing code (and even debugging it).
 I have been coding for 40+ years.
