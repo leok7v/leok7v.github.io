@@ -110,7 +110,7 @@ function ui_init(window, document) {
             toggleAll(e);
         }
     };
-
+    
     document.getElementById("print").onclick = function() {
         window.print();
     }
