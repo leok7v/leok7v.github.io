@@ -309,8 +309,9 @@ appears on the left side of the page. */
     font-size: 0.85em;
 }
 
-#mailto {
+#mailto, #linkedin {
     color: #fdd;
+    cursor: pointer;
 }
 
 #print:hover {
