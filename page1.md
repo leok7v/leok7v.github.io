@@ -1,7 +1,7 @@
-<div align="center">If Internet is still the thing most recent version is here: <a href="https://leok7v.github.io">https://leok7v.github.io</a></div>
+<div align="center" style="font-size: 75%;font-style: italic;">If Internet is still the thing - recent version may be here: <a href="https://leok7v.github.io">https://leok7v.github.io</a></div>
 <p style="display: flex; justify-content: space-between;">
-<span><a id="mailto" href="mailto:leo.kuznetsov@gmail.com">mailto:leo.kuznetsov@gmail.com</a></span>
-<span><a id="linkedin" href="https://www.linkedin.com/in/leok7v">https://www.linkedin.com/in/leok7v</a></span>
+<a id="mailto" href="mailto:leo.kuznetsov@gmail.com">mailto:leo.kuznetsov@gmail.com</a>&nbsp;|&nbsp;
+<a id="linkedin" href="https://www.linkedin.com/in/leok7v">https://www.linkedin.com/in/leok7v</a>
 </p>
 <a href="mailto:leo.kuznetsov@gmail.com"><img align="right" width="128" height="128" src="leo.jpg"></a>
 
