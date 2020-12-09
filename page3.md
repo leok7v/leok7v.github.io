@@ -1,9 +1,17 @@
-Since 2014 to 2020 I worked for <a href="http://www.zspace.com" target="_blank">zSpace</a> Inc.
+Since 2014 to 2020 I have been working for <a href="http://www.zspace.com" target="_blank">zSpace</a> Inc.
 as a principle software engineer and technical lead/architect of system software team.
 
-My team and I are responsible for multiple IR cameras head tracking,
-stylus and screen angle IMU data-stream processing and integration, poses triangulation, and delivery of 3D data to
-end-user applications via C API.
+My duties included reviews of product development plans, subdivision of plans into achivable goals, translating goals into subprojects, architecting interfaces and implementation details of subprojects and writing correct and robust code.
+
+I've interviewed, hired, trained and mentoring of new enginners in the arts of software development.
+
+I have led the team in developing state-of-the-art system software and assited junior members of the team in all phases fo s/w development: jump in and do code reviews and help to debug, test and correct code when necessary. Also interfaced and collaborated extensivly with hardware team.
+
+I have participated in a lot of code and design reviews, assuring proper coverage of topics, imparting lessons learned and good design practices.
+
+I have exetensively collaborated with product development team to ensure our team meets overall development goals in accordance with the product development plan or market requirements and ensure project milestones are met. Was involved in monitoring progress of code development in meeting product requirements and schedule compliance.
+
+The team was responsible for multiple IR cameras head tracking, stylus and screen angle IMU data-stream processing and integration, poses triangulation, and delivery of 3D data to end-user applications via C API.
 
 User facing applications are usually written using Unity 3D, OpenGL/DDX and other GL frameworks.
 
