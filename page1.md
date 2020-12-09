@@ -5,6 +5,11 @@
 </p>
 <a href="mailto:leo.kuznetsov@gmail.com"><img align="right" width="128" height="128" src="leo.jpg"></a>
 
+ - [x] Strong debugging/trouble-shooting skills of embedded systems
+ - [x] Expertise with RTOS, Embedded Linux, Linux kernel and application software development
+ - [x] Experience with real time debugging tools (software and hardware)
+ - [x] System level integration experience including open source packages
+ - [x] Knowledge in serial interface protocols like I2C, SPI and MIPI 
  - [x] Embedded Android NDK/SDK, AOSP
  - [x] C, C++, Java, JavaScript, assembler, SIMD
  - [x] IoT, RTOS, Linux, MacOS, Windows
@@ -12,7 +17,7 @@
  - [x] gcc, clang, cl.exe 
  - [x] msvc, gdb, printf
  - [x] bash, .bat
-
+ - [x] Computer Science fundamentals: object-oriented design, data structures, algorithm design, problem solving, complexity and preformance analysis
 
 [Objective](#page2) | [Resume] (#page3) | Use <a id="print">&#8984;P 
 or <span class="keyboard-key nowrap">Ctrl</span>+P</a> `Save As PDF...` for `pdf` version of this résumé.
