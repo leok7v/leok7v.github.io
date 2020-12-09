@@ -1,5 +1,5 @@
-Since 2014 I work for <a href="http://www.zspace.com" target="_blank">zSpace</a> Inc.
-as a principle software engineer of system software team.
+Since 2014 to 2020 I worked for <a href="http://www.zspace.com" target="_blank">zSpace</a> Inc.
+as a principle software engineer and technical lead/architect of system software team.
 
 My team and I are responsible for multiple IR cameras head tracking,
 stylus and screen angle IMU data-stream processing and integration, poses triangulation, and delivery of 3D data to
@@ -8,6 +8,11 @@ end-user applications via C API.
 User facing applications are usually written using Unity 3D, OpenGL/DDX and other GL frameworks.
 
 System software also supports h/w manufacturing process, cameras calibration, overall components testing. 
+
+Major achivements:
+ - [x] instrumental role in rearchitecting and reimplemting of complete IMU, IR Cameras triangulation pipeline for two systems that are build by the company and shipped to customers. Generated hundreds of millions of dollars revenue for the company. 
+ - [x] invented and implemented new FPGA friendly algorithms for tracking controller hardware. 
+ - [x] lead embedded Android AOSP initative that resulted in succefull 3D VR laptop design, verification, development and production. 
 
 During my course of duty I have:
  - [x] re-implemented ~~250,000~~ lines of C++ code (Windows only, R&D quality, ridden with STL/ATL/MFC)
@@ -32,6 +37,8 @@ During my course of duty I have:
  - [x] mentored junior developers
  - [x] actively collaborated and provided fixes for issues in other team high level projects
  - [x] contributed code to some open source projects
+ - [x] rebuild Android ASOP codebase to a headless version for OEM AmLogic SoC from scratch resulting in reduction of size from 1GB to 100MB and boot time from 30 seconds to 6 seconds
+ - [x] implemented FPGA friendly IR greyscale images compression algorithm for hand gesture recognition AI / neural network research  <a href="https://github.com/leok7v/bdgr/blob/master/bdgr.c" target="_blank">FPGA friendly Golomb Rice compression</a>
 
 hardware used:
 

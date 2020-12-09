@@ -5,7 +5,7 @@
 </p>
 <a href="mailto:leo.kuznetsov@gmail.com"><img align="right" width="128" height="128" src="leo.jpg"></a>
 
- - [x] Embedded Android NDK/SDK
+ - [x] Embedded Android NDK/SDK, AOSP
  - [x] C, C++, Java, JavaScript, assembler, SIMD
  - [x] IoT, RTOS, Linux, MacOS, Windows
  - [x] OpenGL, GLES, GLSL
@@ -26,9 +26,10 @@ markdown and `vi`.
 
 <img align="right" width="128" height="43" src="open-for-business.png">
 
-Notable employment history:
+Notable employment history and achvements:
 ---
 
+ * zSpace (AR/VR system software)
  * Dolby Labs (mobile JPEG HDR)
  * AT&T (Yellow Pages - YP Android - first ever AT&T app on Android)
  * Google (Desktop Search - didn't like it, quit)
