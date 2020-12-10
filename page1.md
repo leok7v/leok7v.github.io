@@ -10,8 +10,9 @@
  - [x] Experience with real time debugging tools (software and hardware)
  - [x] System level integration experience including open source packages
  - [x] OpenCV and other state-of-the-art real-time vision algorithms
- - [x] Knowledge in serial interface protocols like I2C, SPI and MIPI
- - [x] High performance real time camera interfaces 
+ - [x] Knowledge in serial interface protocols like I2C, SPI, MIPI, USB and others
+ - [x] High performance real time camera interfaces
+ - [x] Hardware software protocols design and implementation
  - [x] Embedded Android NDK/SDK, AOSP
  - [x] C, C++, Java, JavaScript, assembler, SIMD
  - [x] IoT, RTOS, Linux, MacOS, Windows
