@@ -9,7 +9,9 @@
  - [x] Expertise with RTOS, Embedded Linux, Linux kernel and application software development
  - [x] Experience with real time debugging tools (software and hardware)
  - [x] System level integration experience including open source packages
- - [x] Knowledge in serial interface protocols like I2C, SPI and MIPI 
+ - [x] OpenCV and other state-of-the-art real-time vision algorithms
+ - [x] Knowledge in serial interface protocols like I2C, SPI and MIPI
+ - [x] High performance real time camera interfaces 
  - [x] Embedded Android NDK/SDK, AOSP
  - [x] C, C++, Java, JavaScript, assembler, SIMD
  - [x] IoT, RTOS, Linux, MacOS, Windows
