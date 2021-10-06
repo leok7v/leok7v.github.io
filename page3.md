@@ -1,3 +1,5 @@
+In 2021 I joined Facebook Reality Labs / Oculus working on XROS platform.
+
 Since 2014 to 2020 I have been working for <a href="http://www.zspace.com" target="_blank">zSpace</a> Inc.
 as a principle software engineer and technical lead/architect of system software team.
 
