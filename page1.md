@@ -36,8 +36,8 @@ markdown and `vi`.
 
 Notable employment history and achvements:
 ---
-
- * zSpace (AR/VR system software)
+ * Facebook Reality Labs / Oculus (XROS platform)
+ * zSpace Inc (AR/VR system software)
  * Dolby Labs (mobile JPEG HDR)
  * AT&T (Yellow Pages - YP Android - first ever AT&T app on Android)
  * Google (Desktop Search - didn't like it, quit)
