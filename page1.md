@@ -12,8 +12,7 @@
  - [x] YOLO-based real-time computer-vision pipelines and AI feature extraction
  - [x] Large-scale C++ → C99 refactors, footprint & performance cuts (500 MB → 5 MB, 97 % CPU → < 5 %)
  - [x] FPGA-friendly algorithm design (e.g., Golomb-Rice IR-gesture compression) and sensor-data pipelines
- - [x] A/B experimentation, statistical analysis, and data-driven optimization of firmware & OS components  
-
+ - [x] A/B experimentation, statistical analysis, and data-driven optimization of firmware & OS components
  - [x] Strong debugging/troubleshooting skills for embedded systems
  - [x] Expertise with RTOS, Embedded Linux, Linux kernel, and application software development
  - [x] Experience with real-time debugging tools (software and hardware)
@@ -30,8 +29,6 @@
  - [x] MSVC, gdb, printf
  - [x] bash, .bat
  - [x] Computer Science fundamentals: object-oriented design, data structures, algorithm design, problem solving, complexity, and performance analysis
-
-
 
 [Objective](#page2) | [Resume] (#page3) | Use <a id="print">&#8984;P 
 or <span class="keyboard-key nowrap">Ctrl</span>+P</a> `Save As PDF...` for `pdf` version of this résumé.
