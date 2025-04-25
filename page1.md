@@ -5,22 +5,31 @@
 </p>
 <a href="mailto:leo.kuznetsov@gmail.com"><img align="right" width="128" height="128" src="leo.jpg"></a>
 
- - [x] Strong debugging/trouble-shooting skills of embedded systems
- - [x] Expertise with RTOS, Embedded Linux, Linux kernel and application software development
- - [x] Experience with real time debugging tools (software and hardware)
- - [x] System level integration experience including open source packages
- - [x] OpenCV and other state-of-the-art real-time vision algorithms
- - [x] Knowledge in serial interface protocols like I2C, SPI, MIPI, USB and others
- - [x] High performance real time camera interfaces
- - [x] Hardware software protocols design and implementation
- - [x] Embedded Android NDK/SDK, AOSP
- - [x] C, C++, Java, JavaScript, assembler, SIMD
- - [x] IoT, RTOS, Linux, MacOS, Windows
- - [x] OpenGL, GLES, GLSL
- - [x] gcc, clang, cl.exe 
- - [x] msvc, gdb, printf
- - [x] bash, .bat
- - [x] Computer Science fundamentals: object-oriented design, data structures, algorithm design, problem solving, complexity and preformance analysis
+ - [x] On-device LLM inference with **ggml**, **llama.cpp**, and quantized DeepSeek/Gemma/Granite/Llama models  
+ - [x] SwiftUI / WebKit bridge engineering and full-stack iOS / macOS app development  
+ - [x] Performance tuning and power-saving algorithms for Fuchsia-based **XROS** and Android VR (Horizon OS)  
+ - [x] Architecture and code for glasses-free 3D lenticular displays with eye-tracking, IMU, and stylus tracking  
+ - [x] YOLO-based real-time computer-vision pipelines and AI feature extraction  
+ - [x] Large-scale C++ → C99 refactors, footprint & performance cuts (500 MB → 5 MB, 97 % CPU → < 5 %)  
+ - [x] FPGA-friendly algorithm design (e.g., Golomb-Rice IR-gesture compression) and sensor-data pipelines  
+ - [x] A/B experimentation, statistical analysis, and data-driven optimization of firmware & OS components  
+
+ - [x] Strong debugging/troubleshooting skills for embedded systems  
+ - [x] Expertise with RTOS, Embedded Linux, Linux kernel, and application software development  
+ - [x] Experience with real-time debugging tools (software and hardware)  
+ - [x] System-level integration experience, including open-source packages  
+ - [x] OpenCV and other state-of-the-art real-time vision algorithms  
+ - [x] Knowledge of serial interface protocols such as I2C, SPI, MIPI, USB, and others  
+ - [x] High-performance real-time camera interfaces  
+ - [x] Hardware-software protocol design and implementation  
+ - [x] Embedded Android NDK/SDK, AOSP  
+ - [x] C, C++, Java, JavaScript, assembler, SIMD  
+ - [x] IoT, RTOS, Linux, macOS, Windows  
+ - [x] OpenGL, GLES, GLSL  
+ - [x] gcc, clang, cl.exe  
+ - [x] MSVC, gdb, printf  
+ - [x] bash, .bat  
+ - [x] Computer Science fundamentals: object-oriented design, data structures, algorithm design, problem solving, complexity, and performance analysis  
 
 [Objective](#page2) | [Resume] (#page3) | Use <a id="print">&#8984;P 
 or <span class="keyboard-key nowrap">Ctrl</span>+P</a> `Save As PDF...` for `pdf` version of this résumé.
