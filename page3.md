@@ -1,4 +1,31 @@
+In 2024-2025 Chat GPT hobby project.
+
+<a href="https://github.com/leok7v/gyptix" target="_blank">GyPTix</a> Generative Pretrained Transformer open source project.
+
+ - [x] Running Small Language Models inference on lightweight GPU/CPU edge devices.
+ - [x] Utilizing ggml and llama.cpp for on-device edge AI inferencce capable of running on mobile devices.
+ - [x] Open source freeware <a href="http://gyptix.github.io" target="_blank">GyPTix</a> iOS/macOS application development from scratch.
+ - [x] Building simple SwiftUI/WebKit bridge for lightweight mobile apps development.
+ - [x] Rearchiteting llama.cpp code for mobile devices requirements.
+ - [x] Experimenting with variery of DeepSeek, Gemma, Granite, Llama and other small quinantized LLM for on-device deployment. 
+
+In 2022-2024 second tour of duty to <a href="http://www.zspace.com" target="_blank">zSpace</a> Inc in a consultant first and full time lead architect hands on role.
+
+ - [x] Adapting and changing system architecture and code for zSpace and Acer use lenticular lens displays and eye-tracking technology. 
+ - [x] Implementing, debugging and shipping code to deliver glasses-free, immersive 3D experiences for zSpace's Inspire and Imagine products.
+ - [x] Collaborating with Acer's SpatialLabs technology on cameras code stack to provide seamless optical and IMU 3D stylus tracking.
+ - [x] Modifying and productizing API code for lenticular displays and eye-tracking for glasses-free 3D.
+ - [x] Pioneering training and inference algorithms for YOLO (You Only Look Once) AI models.
+ - [x] Experiments with AI feature extraction to be used in optical driven stylus and user eyes pose detection.
+
 In 2021 I joined Facebook Reality Labs / Oculus working on XROS platform.
+
+Details of engagement:
+ - [x] Deep dive into XROS (based on Fuchsia OS) source code interprocess communiations code. 
+ - [x] Building entire XROS from source code and conducting performance experiments. 
+ - [x] Building Android VR OS (Horizon OS) from source code, debugging battery and performance issues. 
+ - [x] Inovative algorithms for Horizon OS "idle" detection resulting in significant power savings.
+ - [x] Conducting A/B experiments for different idle detection algorithms, collaborating with Data Scientists in experiments data collection and analysis.
 
 Since 2014 to 2020 I have been working for <a href="http://www.zspace.com" target="_blank">zSpace</a> Inc.
 as a principle software engineer and technical lead/architect of system software team.
