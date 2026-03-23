@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — im.ai</title>
+  <meta name="description" content="im.ai support — getting started, FAQ, and how to reach us.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">im.ai</a>
+  <ul class="nav-links">
+    <li><a href="index.html#features">Features</a></li>
+    <li><a href="index.html#screenshots">Screenshots</a></li>
+    <li><a href="index.html#providers">Providers</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="support.html" style="color:var(--text)">Support</a></li>
+  </ul>
+  <a href="index.html#download" class="btn btn-primary">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+    </svg>
+    App Store
+  </a>
+</nav>
+
+<main>
+  <div class="page-hero">
+    <span class="section-tag">Help</span>
+    <h1>Support</h1>
+    <p class="lead">
+      Have a question or found a bug? We're happy to help.
+      Check the FAQ below or open an issue on GitHub.
+    </p>
+  </div>
+
+  <div class="prose">
+
+    <!-- Contact card -->
+    <div class="highlight-box" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:48px">
+      <div>
+        <p style="color:var(--text);font-weight:600;margin-bottom:4px">Found a bug or have a feature request?</p>
+        <p style="margin:0">Open an issue on GitHub — it's the fastest way to get help.</p>
+      </div>
+      <a href="https://github.com/leok7v/leok7v.github.io/issues" target="_blank" rel="noopener noreferrer"
+         class="btn btn-primary" style="white-space:nowrap;flex-shrink:0">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+        Open an Issue
+      </a>
+    </div>
+
+    <h2>Getting Started</h2>
+
+    <h2 style="font-size:1rem;font-weight:600;border:none;padding:0;margin:0 0 12px;color:var(--text-2)">Local models</h2>
+    <p>
+      On first launch, im.ai lets you browse and download open-source models directly within the app.
+      Select a model from the list, tap Download, and wait for it to complete.
+      Once downloaded, it runs entirely on your device — no internet needed.
+    </p>
+    <ul>
+      <li>Larger models (7B+) give better quality but require more RAM and storage</li>
+      <li>Quantized (Q4, Q8) variants offer a good balance of size and quality</li>
+      <li>On iPhone, models up to ~4B parameters work well; Mac handles larger models</li>
+    </ul>
+
+    <h2 style="font-size:1rem;font-weight:600;border:none;padding:0;margin:24px 0 12px;color:var(--text-2)">Cloud providers</h2>
+    <p>
+      To connect a cloud provider, tap the model picker in the toolbar, choose a provider,
+      and enter your API key when prompted. Keys are stored securely in the system Keychain.
+    </p>
+    <ul>
+      <li><a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">Get a Gemini API key</a></li>
+      <li><a href="https://console.groq.com/keys" target="_blank" rel="noopener noreferrer">Get a Groq API key</a></li>
+      <li><a href="https://openrouter.ai/keys" target="_blank" rel="noopener noreferrer">Get an OpenRouter API key</a></li>
+      <li><a href="https://inference.cerebras.ai/" target="_blank" rel="noopener noreferrer">Get a Cerebras API key</a></li>
+      <li><a href="https://github.com/marketplace/models" target="_blank" rel="noopener noreferrer">GitHub Models access</a></li>
+    </ul>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <p class="faq-q">Which Mac and iOS versions are required?</p>
+      <p class="faq-a">
+        im.ai requires macOS 14 Sonoma or later and iOS 17 or later.
+        Apple Silicon Macs (M1 and newer) deliver the best local inference performance.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">How much storage do local models use?</p>
+      <p class="faq-a">
+        Model sizes vary widely. Small models like SmolLM2 360M take under 500 MB, while larger
+        models like Llama 3 8B (Q4) use around 5 GB. You can delete any downloaded model
+        from within the app to free up space.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Can I use the app without an internet connection?</p>
+      <p class="faq-a">
+        Yes — once a local model is downloaded, im.ai works completely offline.
+        Cloud providers require an internet connection by nature.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Are my conversations stored in the cloud?</p>
+      <p class="faq-a">
+        No. Conversation history is stored only in the app's local storage on your device.
+        We have no servers and receive no conversation data of any kind.
+        See our <a href="privacy.html">Privacy Policy</a> for full details.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Is im.ai free?</p>
+      <p class="faq-a">
+        Yes. im.ai is completely free to download and use. There are no in-app purchases,
+        no subscriptions, and no premium tiers.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">A cloud provider says my API key is invalid. What do I do?</p>
+      <p class="faq-a">
+        Double-check that you've copied the key correctly with no extra spaces.
+        Make sure the key is active in your provider's dashboard and that your account is in
+        good standing. Some providers require billing to be set up before issuing keys.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">The app crashes or a model fails to load. What should I do?</p>
+      <p class="faq-a">
+        Large models can exceed available RAM and cause the OS to terminate the app.
+        Try a smaller or more heavily quantized model variant (Q4 instead of Q8, or a 3B
+        instead of 7B). If the issue persists, please
+        <a href="https://github.com/leok7v/leok7v.github.io/issues" target="_blank" rel="noopener noreferrer">open an issue on GitHub</a>
+        with your device model and macOS/iOS version.
+      </p>
+    </div>
+
+    <h2>Contact &amp; Community</h2>
+    <p>
+      The best way to reach us is through GitHub:
+    </p>
+    <ul>
+      <li><a href="https://github.com/leok7v/leok7v.github.io/issues" target="_blank" rel="noopener noreferrer">Report a bug or request a feature</a></li>
+      <li><a href="https://github.com/leok7v/leok7v.github.io/discussions" target="_blank" rel="noopener noreferrer">Ask a question or start a discussion</a></li>
+    </ul>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <a href="index.html" class="footer-logo">im.ai</a>
+      <span class="footer-copy">&copy; 2025&ndash;2026 Dmitry Kuznetsov. All rights reserved.</span>
+    </div>
+    <ul class="footer-links">
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="https://github.com/leok7v/im.ai" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
