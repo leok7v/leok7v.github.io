@@ -26,7 +26,7 @@ Some of the original compiler code is still used in a successful Excelsior JET p
 
 1977-1980
 ---
-I've coded my first ever program in PL/1 on IMB-360 (USSR clone) using punch cards in summer 1977.
+I've coded my first ever program in PL/1 on an IBM-360 (USSR clone) using punch cards in the summer of 1977.
 I wrote some Fortran-IV, Algol, Pascal, Basic and assembler code moonlighting during my college years.
 
 Education (1980 – 1985)

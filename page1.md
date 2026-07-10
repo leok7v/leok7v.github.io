@@ -30,7 +30,7 @@
  - [x] bash, .bat
  - [x] Computer Science fundamentals: object-oriented design, data structures, algorithm design, problem solving, complexity, and performance analysis
 
-[Objective](#page2) | [Resume] (#page3) | Use <a id="print">&#8984;P 
+[Objective](#page2) | [Resume](#page3) | Use <a id="print">&#8984;P 
 or <span class="keyboard-key nowrap">Ctrl</span>+P</a> `Save As PDF...` for `pdf` version of this résumé.
 
 I hate writing résumés and love writing code (and even debugging it).
@@ -42,7 +42,7 @@ markdown and `vi`.
 
 <img align="right" width="128" height="43" src="open-for-business.png">
 
-Notable employment history and achvements:
+Notable employment history and achievements:
 ---
  * Facebook Reality Labs / Oculus (XROS platform)
  * zSpace Inc (AR/VR system software)

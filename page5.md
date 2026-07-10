@@ -29,7 +29,7 @@ In 2005 I worked for Google in a capacity of senior software engineer in Google 
 My contributions were:
  * Performance and security analysis and improvements.
 
-I found both performance and security unsatisfactory presented my results and left the company for the lack of actions upon them.
+I found both performance and security unsatisfactory, presented my results, and left the company for the lack of action upon them.
 Two years later in 2007 <a href="https://en.wikipedia.org/wiki/Google_Desktop#Security">GDS Security Issues</a> were 
 confirmed outside of the company. I was no longer with the company to utter "I've told you so...".
 In 2011 the GDS has been discontinued.
@@ -51,6 +51,6 @@ Blurb Inc (2005–2006)
 
 I was team lead of Desktop client team at <a href="https://www.blurb.com/" target="_blank">Blurb Inc.</a>
 
-Designed, implemented from scratch, and successfully released the original version of the BookSmart application for Windows and Macintosh platforms. BookMaker is a desktop self-publishing automation tool that provides significantly simplified experience for beginner users to create books, photo albums, and other print-on-demand production (comparing e.g. to Open Office). Similar to Apple iPhoto. 
-Lead a team of 3 software developers and 2 test engineers.
-Implemented Java/Swing UI code, complex page layout algorithms, servers communication layer.
+Designed, implemented from scratch, and successfully released the original version of the BookSmart application for Windows and Macintosh platforms. BookSmart is a desktop self-publishing automation tool that provides a significantly simplified experience for beginners to create books, photo albums, and other print-on-demand products (compared, e.g., to OpenOffice). Similar to Apple iPhoto. 
+Led a team of 3 software developers and 2 test engineers.
+Implemented Java/Swing UI code, complex page-layout algorithms, and the server communication layer.

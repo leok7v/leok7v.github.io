@@ -1,7 +1,7 @@
 Wind River Systems
 ---
 
-I actually performed two tours of duty with Wind River with brief detour to couple of other projects in between.
+I actually performed two tours of duty with Wind River, with a brief detour to a couple of other projects in between.
 
 2002-2005
 ---

@@ -1,8 +1,8 @@
 Over the years I have written code in most of the possible and most bizarre styles you can think of.
 
-I never argues with a team about how the code must look as long as team's code style is self consistent and readable.
+I never argue with a team about how the code must look as long as the team's code style is self-consistent and readable.
 
-For myself I've settled on what I've found most convent over the years. 
+For myself I've settled on what I've found most convenient over the years. 
 
 My personal motto in code styling was: *"To achieve peace of mind and for the love of code you must achieve peace with the code first..."* 
 (I must confess - I've never understood `warrios` in various `codewarrior` tools)
@@ -18,9 +18,9 @@ Naming.
 NeverMixCamelCase with readable Linux/posix like lower_case_underscore_naming.
 
 
-comas, spaces and punctuation
+commas, spaces and punctuation
 ---
-spaces after comas (like in written English prose) and never inside ()
+spaces after commas (like in written English prose) and never inside ()
 ~~~
 function_calls(parameter1, parameter2); // spaces always after "," and nowhere else
 ~~~
@@ -40,8 +40,8 @@ void foo(const char* *out) {
 Vertical empty spaces
 ---
 Function definitions separated by empty line. Groups of variables may be separated by empty line.
-In all other cases do not use vertical separation of fill it with meaningful comment or split code
-in small functions that do not need to be read as a War and Peace paragraphs.
+In all other cases do not use vertical separation; fill it with a meaningful comment or split the code
+into small functions that do not need to be read as War and Peace paragraphs.
 ~~~
 #include <stdio.h>
 
@@ -54,7 +54,7 @@ int main(int argc, const char* argv[]) {
 
 Indent
 ---
-Indent is **4**. indent 2 and 3 was good for 80x24 terminals. It's 21st century it is 4!
+Indent is **4**. Indent 2 and 3 were good for 80x24 terminals. It's the 21st century; it is 4!
 (8 was good for Linus leads to unbearably vertical code)
 
 Header Files
@@ -109,7 +109,7 @@ void performance_critical_code() {
 
 Variable length array or alloca()
 ---
-Only use when it is important for performance and the size is known to be small bounded and will fit on the stack in all situations.
+Only use when it is important for performance and the size is known to be small, bounded, and will fit on the stack in all situations.
 ~~~
 int matrixNxN_operation(float* a, float* b, int n) {
     int r = 0;
@@ -142,9 +142,9 @@ b = b && bar(); /* instead */
 
 Integer types
 ---
-Type `int` is used in C to index arrays. Safe assumption on most recent platform that it's int32_t or larger.
-Type `size_t` and `isize_t` was one of the biggest posix mistakes and should be avoided as much as possible.
-Int all composite types (arrays and structs) and some function parameter sized `<stdint.h>` must be used.
+Type `int` is used in C to index arrays. A safe assumption on most recent platforms is that it's int32_t or larger.
+Types `size_t` and `isize_t` were among the biggest posix mistakes and should be avoided as much as possible.
+In all composite types (arrays and structs) and some function parameters, sized `<stdint.h>` types must be used.
 
 Packed structures
 ---
@@ -152,7 +152,7 @@ Structures interfacing with hardware or network must be packed. Other structures
 
 Variable declaration
 ---
-Only declare single variable for line
+Only declare a single variable per line
 ~~~
 int i, j, k; // is bad
 int i = 0; // one variable per line, same for struct fields
@@ -242,16 +242,16 @@ int sqrt(float* result, float x) { // returns 0 on success and posix error code 
 }
 ~~~
 but harder to use. Though in robust code most of the functions must 
-return error/success code and it must be checked by caller and acted 
-accordingly. In rare situations where the performance is at stake
-creative usage if setjmp() and longjmp() or similar exception like API/ABI
+return an error/success code, and it must be checked by the caller and acted 
+upon accordingly. In rare situations where the performance is at stake,
+creative usage of setjmp() and longjmp() or a similar exception-like API/ABI
 may be warranted (study libjpeg source code for a decent architecture 
 using this technique).
 
 Early return
 ---
-Avoid early `return` like a plague. Just word of advise. You will be thankful.
-While is super simple scenarios like below usage of `return` result/error statements 
+Avoid early `return` like a plague. Just a word of advice. You will be thankful.
+While in super-simple scenarios like below usage of `return` result/error statements 
 may be warranted (the condition is binary, carved in stone and not going to change).
 ~~~
 int sqrt(float* result, float x) { // returns 0 on success and posix error code on failure
@@ -290,15 +290,15 @@ Always think about it. And also do not rely on signed pointers being in any spec
 
 `malloc()`/`free()`
 ---
-Heap has been invented for a reasons. 
+Heap has been invented for a reason. 
 Some of them are to keep our life more interesting (and a bit harder).
 To simplify leaking something and justifying selling new computer to a customer.
 Creating more jobs among software engineers. Selling named engineers plethora of leak hunting tools.
 Justifying performance expensive but convenient technologies of garbage collection or automatic reference counting.
 And last but not the least, managing unpredictable and unknown at compiler time unbounded amount of data up to the size of available memory.
-On multitasking system the last reason above creates it's own cooperation problems.
-Never the less, it is important to understand that both `malloc()` and `free()` in addition to poor performance
-are also __**synchronization**__ points and do affect the performance of multi-threaded system in a hard and subtle ways:
+On a multitasking system the last reason above creates its own cooperation problems.
+Nevertheless, it is important to understand that both `malloc()` and `free()`, in addition to poor performance,
+are also __**synchronization**__ points and do affect the performance of a multi-threaded system in hard and subtle ways:
 ~~~
 void performance_critical_function_that_can_be_called_from_multiple_threads() {
     struct small_s* p = (struct small_s*)malloc(sizeof(struct small_s)); // bad technique
@@ -311,10 +311,10 @@ void performance_critical_function_that_can_be_called_from_multiple_threads() {
 typedef versus struct
 ---
 The issue only exists because of Linus personal opinion, 
-absence of anonymous structs in early versions of C language, 
-disagreement between C and C++ on anonymous stucts,
-and poor job early versions of emacs and vi did on type details visualization.
-Despite of all the examples above
+absence of anonymous structs in early versions of the C language, 
+disagreement between C and C++ on anonymous structs,
+and the poor job early versions of emacs and vi did on type-detail visualization.
+Despite all the examples above
 ~~~
 typedef struct { float x; float y; } pointf_t; // is quite clean and useful type definition
 ~~~
@@ -355,16 +355,16 @@ static foo(something_callback_t* cb) {
     foo(&something.cb);
 ...
 ~~~
-yes, comparing to JavaScript closures on Objective C/Swift blocks it looks verbose and clumsy.
+yes, compared to JavaScript closures or Objective-C/Swift blocks it looks verbose and clumsy.
 This is why aforementioned languages exist. It would be nice (and wishful thinking) if C21 ANSI 
 committee would adopt blocks.
 
 Single File Library
 ---
-Is a great concept for simplified distribution of straight forward pieces of C code.
-(If you are not familiar with it - "google" it - it worth every minute of your time)
-It is absolute must if you can and you going to distribute your creation.
+Is a great concept for simplified distribution of straightforward pieces of C code.
+(If you are not familiar with it - "google" it - it is worth every minute of your time)
+It is an absolute must if you can and you are going to distribute your creation.
 For the internal codebases do not abuse it - it makes code harder to read and use.
 
 
-To see this set of rules in action: <a href="https://tinyurl.com/hashtable-c" target="_blank">https://tinyurl.com/hashtable-c<a>
+To see this set of rules in action: <a href="https://tinyurl.com/hashtable-c" target="_blank">https://tinyurl.com/hashtable-c</a>
