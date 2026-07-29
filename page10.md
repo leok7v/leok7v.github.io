@@ -27,3 +27,10 @@ md.too
 A minimalist, read-only Markdown viewer for macOS and iOS. Native Swift, zero third-party dependencies.
 
 <a href="https://leok7v.github.io/md.too/" target="_blank">leok7v.github.io/md.too</a>
+
+Gadeon
+---
+
+On-device chat for macOS and iOS running Gated DeltaNet hybrid models on the Apple Neural Engine through CoreML, with a pure-Swift Metal backend for ternary models. No C, no Python, no FFI.
+
+<a href="https://leok7v.github.io/gadeon/" target="_blank">leok7v.github.io/gadeon</a>
