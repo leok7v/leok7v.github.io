@@ -786,38 +786,46 @@ footer .sp { margin-left: auto; }
     <p class="eyebrow">Measured</p>
     <h2>Throughput.</h2>
     <p class="lede">
-      MacBook Air (M3, 24 GB), release build. A 512-token prefill followed by
-      128 greedy decodes, one warmup pass -- the same protocol as
-      <code>llama-bench -p 512 -n 128</code>.
+      Two machines, release builds: a MacBook Air (M3, 24 GB) and an M4 Pro
+      (48 GB). A 512-token prefill followed by 128 greedy decodes, one warmup
+      pass -- the same protocol as <code>llama-bench -p 512 -n 128</code>.
     </p>
     <div class="tw">
       <table>
         <thead>
           <tr>
             <th>Model</th><th>Backend</th>
-            <th style="text-align:right">Prefill tok/s</th>
-            <th style="text-align:right">Decode tok/s</th>
+            <th style="text-align:right">M3 prefill</th>
+            <th style="text-align:right">M3 decode</th>
+            <th style="text-align:right">M4 Pro prefill</th>
+            <th style="text-align:right">M4 Pro decode</th>
           </tr>
         </thead>
         <tbody>
           <tr class="ne"><td class="mdl">Qwen3.5 0.8B</td>
             <td><span class="badge">Neural Engine</span></td>
-            <td class="num hot">3065</td><td class="num hot">66.9</td></tr>
+            <td class="num">3065</td><td class="num">66.9</td>
+            <td class="num hot">3506</td><td class="num hot">97.7</td></tr>
           <tr class="ne"><td class="mdl">QwenPaw 2B</td>
             <td><span class="badge">Neural Engine</span></td>
-            <td class="num">2157</td><td class="num">36.1</td></tr>
+            <td class="num">2157</td><td class="num">36.1</td>
+            <td class="num">2476</td><td class="num">54.6</td></tr>
           <tr class="ne"><td class="mdl">QwenPaw 4B</td>
             <td><span class="badge">Neural Engine</span></td>
-            <td class="num">846</td><td class="num">17.0</td></tr>
+            <td class="num">846</td><td class="num">17.0</td>
+            <td class="num">967</td><td class="num">26.0</td></tr>
           <tr class="ne"><td class="mdl">QwenPaw 9B</td>
             <td><span class="badge">Neural Engine</span></td>
-            <td class="num">456</td><td class="num">9.9</td></tr>
+            <td class="num">456</td><td class="num">9.9</td>
+            <td class="num">504</td><td class="num">14.7</td></tr>
           <tr><td class="mdl">Ternary Bonsai 1.7B</td>
             <td><span class="badge gpu">Metal GPU</span></td>
-            <td class="num">545</td><td class="num">57.0</td></tr>
+            <td class="num">545</td><td class="num">57.0</td>
+            <td class="num">--</td><td class="num">--</td></tr>
           <tr><td class="mdl">Ternary Bonsai 27B</td>
             <td><span class="badge gpu">Metal GPU</span></td>
-            <td class="num">48</td><td class="num">8.2</td></tr>
+            <td class="num">48</td><td class="num">8.2</td>
+            <td class="num">--</td><td class="num">--</td></tr>
         </tbody>
       </table>
     </div>
@@ -828,7 +836,69 @@ footer .sp { margin-left: auto; }
       below. They are kept as a comparison point, driven by the same harness as
       the Neural Engine models, so their quality and speed can be read side by
       side. The 1.7B row prefills 508 tokens rather than 512: its vocabulary
-      segments the same prompt differently.
+      segments the same prompt differently. The two ternary rows were not re-run
+      on the M4 Pro, so those cells are blank rather than estimated.
+    </p>
+
+    <h3>Speculative decode, and a second stack.</h3>
+    <p>
+      The M4 Pro run also measured two things the table above cannot show:
+      what self-speculative decode does to the decode column, and how the
+      whole thing compares against <code>llama.cpp</code> on the same machine
+      -- its Metal GPU backend, 4-bit weights, same prompt, back to back.
+    </p>
+    <div class="tw">
+      <table>
+        <thead>
+          <tr>
+            <th>Model, M4 Pro</th>
+            <th style="text-align:right">Prefill</th>
+            <th style="text-align:right">llama.cpp</th>
+            <th style="text-align:right">Decode</th>
+            <th style="text-align:right">Decode + MTP</th>
+            <th style="text-align:right">llama.cpp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="ne"><td class="mdl">Qwen3.5 0.8B</td>
+            <td class="num">3506</td><td class="num">4194</td>
+            <td class="num">97.7</td><td class="num">82.5</td>
+            <td class="num">198.3</td></tr>
+          <tr class="ne"><td class="mdl">QwenPaw 2B</td>
+            <td class="num hot">2476</td><td class="num">1945</td>
+            <td class="num">54.6</td><td class="num">50.1</td>
+            <td class="num">124.6</td></tr>
+          <tr class="ne"><td class="mdl">QwenPaw 4B</td>
+            <td class="num hot">967</td><td class="num">770</td>
+            <td class="num">26.0</td><td class="num hot">30.1</td>
+            <td class="num">60.4</td></tr>
+          <tr class="ne"><td class="mdl">QwenPaw 9B</td>
+            <td class="num hot">504</td><td class="num">428</td>
+            <td class="num">14.7</td><td class="num hot">21.9</td>
+            <td class="num">38.6</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cap">
+      Two readings. On prefill the Neural Engine <em>beats</em> the GPU at 2B,
+      4B and 9B, and the lead widens with model size -- the GPU pays a fixed
+      launch cost per kernel that the batched, fully-placed prefill trunk
+      amortizes away. Only the smallest model loses. On decode the GPU wins by
+      roughly two times across the board. Speculative decode is the lever that
+      narrows it, and it pays only where decode is already slow enough to
+      amortize a verify pass: it costs the 0.8B and the 2B throughput, turns
+      positive on the 4B at +16%, and is worth +49% on the 9B. The crossover
+      sits between the 2B and the 4B, and the slower the model, the more it
+      earns.
+    </p>
+    <p class="caveat">
+      That comparison is not apples to apples, in two ways that both matter.
+      Our weights are 6-bit and llama.cpp's are about 4.5-bit, so the faster
+      decode is also reading fewer bytes per token. And the accelerators differ
+      in kind: the Neural Engine is the low-power path and leaves the GPU and
+      CPU free, while Metal is peak throughput at high power. "The GPU decodes
+      twice as fast" is a throughput-at-full-power claim, not an efficiency
+      one.
     </p>
     <p class="caveat">
       Hardware: 16-core Neural Engine rated 18 TOPS, 10-core GPU, 8-core CPU,
