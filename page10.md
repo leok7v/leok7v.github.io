@@ -28,9 +28,9 @@ A minimalist, read-only Markdown viewer for macOS and iOS. Native Swift, zero th
 
 <a href="https://leok7v.github.io/md.too/" target="_blank">leok7v.github.io/md.too</a>
 
-Gadeon
+ChatOKF
 ---
 
-On-device chat for macOS and iOS running Gated DeltaNet hybrid models on the Apple Neural Engine through CoreML, with a pure-Swift Metal backend for ternary models. No C, no Python, no FFI.
+On-device chat for macOS and iOS — the whole model runs on your own hardware, in pure Swift on Metal. What it remembers is plain text in the Open Knowledge Format, so it outlives the model that wrote it. No C, no Python, no FFI.
 
-<a href="https://leok7v.github.io/gadeon/" target="_blank">leok7v.github.io/gadeon</a>
+<a href="https://leok7v.github.io/ChatOKF/" target="_blank">leok7v.github.io/ChatOKF</a>
