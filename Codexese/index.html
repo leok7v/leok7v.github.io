@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codexese</title>
+<meta name="description" content="Codexese turns your message into a page of an old manuscript nobody can read. Your friend opens it in Codexese and the words come back. iPhone, iPad and Mac.">
+<meta name="theme-color" content="#14162e">
+<meta property="og:title" content="Codexese">
+<meta property="og:description" content="Write anything. It becomes a page from a book nobody can read.">
+<meta property="og:image" content="https://leok7v.github.io/Codexese/iphone-1.jpg">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+:root {
+  --night: #14162e;
+  --night-2: #0b0c1c;
+  --gold: #e8cf8a;
+  --cream: #ece4d0;
+  --mute: #b6ad98;
+  --edge: rgba(232, 207, 138, 0.25);
+  --serif: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond,
+           "Times New Roman", serif;
+}
+* { box-sizing: border-box; }
+html { background: var(--night-2); }
+body {
+  margin: 0;
+  color: var(--cream);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.55;
+  background: linear-gradient(180deg, var(--night) 0%, var(--night-2) 70%);
+  min-height: 100vh;
+}
+main { max-width: 980px; margin: 0 auto; padding: 48px 16px 64px; }
+header { text-align: center; }
+header img { width: 112px; height: 112px; border-radius: 24px; }
+h1 {
+  color: var(--gold);
+  font-weight: normal;
+  font-size: 54px;
+  margin: 12px 0 4px;
+  letter-spacing: 0.02em;
+}
+.tag { color: var(--cream); font-size: 22px; margin: 0; }
+.soon {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 8px 18px;
+  border: 1px solid var(--edge);
+  border-radius: 999px;
+  color: var(--gold);
+  font-size: 17px;
+}
+.shots {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin: 40px 0;
+}
+.shots img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 0 24px rgba(200, 170, 100, 0.25);
+}
+.mac img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 24px rgba(200, 170, 100, 0.2);
+}
+h2 {
+  color: var(--gold);
+  font-weight: normal;
+  font-size: 30px;
+  margin: 44px 0 10px;
+}
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
+a { color: var(--gold); }
+footer {
+  margin-top: 56px;
+  padding-top: 18px;
+  border-top: 1px solid var(--edge);
+  color: var(--mute);
+  font-size: 16px;
+  text-align: center;
+}
+@media (max-width: 720px) {
+  .shots { grid-template-columns: repeat(2, 1fr); }
+  h1 { font-size: 42px; }
+  .tag { font-size: 19px; }
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="icon.png" alt="Codexese icon">
+  <h1>Codexese</h1>
+  <p class="tag">Write anything. It becomes a page from a book nobody can read.</p>
+  <span class="soon">Coming soon to the App Store for iPhone, iPad and Mac</span>
+</header>
+
+<section class="shots">
+  <img src="iphone-1.jpg" alt="A short message and its page in old script">
+  <img src="iphone-2.jpg" alt="The script turns back into words">
+  <img src="iphone-3.jpg" alt="A page read back from a picture">
+  <img src="iphone-4.jpg" alt="The letter, exactly as it was written">
+</section>
+
+<p>Codexese turns your message into a page of an old manuscript. Page
+looks like it came from a medieval book nobody can read: strange
+letters, parchment, flowers on the margins. But it is not random. Every
+word you wrote is there, and Codexese can read it back.</p>
+
+<p>Send the page to a friend by any messenger, mail or social network.
+For everybody else it is just a pretty old picture. Your friend opens it
+in Codexese and the words come back, exactly as you wrote them.</p>
+
+<h2>How it works</h2>
+<ul>
+  <li>Write a short message. The page is made right away, while you type.</li>
+  <li>Tap the eye and watch your words come through the old script.</li>
+  <li>Share the picture or save it to Photos.</li>
+  <li>To read a page, open the picture in Codexese, or share it to
+      Codexese right from Photos. On Mac, drop it on the window.</li>
+</ul>
+
+<section class="mac">
+  <h2>On Mac too</h2>
+  <img src="mac.jpg" alt="Codexese on Mac: the text on the left, the page on the right">
+</section>
+
+<h2>Good to know</h2>
+<ul>
+  <li>No account, no server, no ads, no tracking. Everything happens on
+      your device. See the <a href="privacy.html">privacy policy</a>.</li>
+  <li>It is not encryption. Codexese hides your words in plain sight, it
+      does not lock them. Anybody with Codexese can read the page. Think
+      of it as secret handshake, not a safe.</li>
+  <li>One page holds about 180 words. Codexese does not let you write
+      more than fits, so every page can be read back.</li>
+  <li>Send the picture at full size. Some messengers make pictures
+      smaller, and a page with small letters may not read back.</li>
+  <li>The round seal in the corner of every page is a QR code. It brings
+      whoever scans it to this page.</li>
+</ul>
+
+<h2 id="support">Support</h2>
+<p>Something does not work, a page does not read back, or you have an
+idea? Write me to
+<a href="mailto:leo.kuznetsov@gmail.com?subject=Codexese">leo.kuznetsov@gmail.com</a>.
+Please say which device you use and, if you can, attach the picture
+that did not read.</p>
+
+<footer>
+  The script is inspired by the Voynich manuscript, a real book from the
+  15th century that nobody could read until today.<br>
+  <a href="privacy.html">Privacy</a> &middot;
+  <a href="https://leok7v.github.io/">leok7v.github.io</a><br>
+  &copy; 2026 Dmitry &ldquo;Leo&rdquo; Kuznetsov
+</footer>
+</main>
+</body>
+</html>

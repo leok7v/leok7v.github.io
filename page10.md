@@ -34,3 +34,10 @@ ChatOKF
 On-device chat for macOS and iOS — the whole model runs on your own hardware, in pure Swift on Metal. What it remembers is plain text in the Open Knowledge Format, so it outlives the model that wrote it. No C, no Python, no FFI.
 
 <a href="https://leok7v.github.io/ChatOKF/" target="_blank">leok7v.github.io/ChatOKF</a>
+
+Codexese
+---
+
+Write a message and it becomes a page of an old manuscript nobody can read. Your friend opens the picture in Codexese and the words come back. iPhone, iPad and Mac, no account, no server.
+
+<a href="https://leok7v.github.io/Codexese/" target="_blank">leok7v.github.io/Codexese</a>
