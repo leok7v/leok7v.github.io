@@ -14,26 +14,26 @@
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) {
     color-scheme: light;
-    --bg-top: #f6eedb;
-    --bg: #eadcbc;
-    --gold: #7d4f12;
+    --bg-top: #f8f6f1;
+    --bg: #f1ede5;
+    --gold: #6b4a22;
     --ink: #2b2214;
-    --mute: #6d5c40;
-    --edge: rgba(125, 79, 18, 0.25);
-    --nav-bg: rgba(246, 238, 219, 0.86);
-    --glow: rgba(125, 79, 18, 0.22);
+    --mute: #6e655a;
+    --edge: rgba(107, 74, 34, 0.18);
+    --nav-bg: rgba(248, 246, 241, 0.88);
+    --glow: rgba(60, 50, 40, 0.18);
   }
 }
 :root[data-theme="light"] {
   color-scheme: light;
-  --bg-top: #f6eedb;
-  --bg: #eadcbc;
-  --gold: #7d4f12;
+  --bg-top: #f8f6f1;
+  --bg: #f1ede5;
+  --gold: #6b4a22;
   --ink: #2b2214;
-  --mute: #6d5c40;
-  --edge: rgba(125, 79, 18, 0.25);
-  --nav-bg: rgba(246, 238, 219, 0.86);
-  --glow: rgba(125, 79, 18, 0.22);
+  --mute: #6e655a;
+  --edge: rgba(107, 74, 34, 0.18);
+  --nav-bg: rgba(248, 246, 241, 0.88);
+  --glow: rgba(60, 50, 40, 0.18);
 }
 * { box-sizing: border-box; }
 html { background: var(--bg); }

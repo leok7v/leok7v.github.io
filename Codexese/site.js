@@ -20,7 +20,7 @@
     if (meta) {
       var dark = mode === 'dark' || (mode === 'system' &&
                  window.matchMedia('(prefers-color-scheme: dark)').matches);
-      meta.setAttribute('content', dark ? '#14162e' : '#f6eedb');
+      meta.setAttribute('content', dark ? '#14162e' : '#f8f6f1');
     }
     try { localStorage.setItem('codexese-theme', mode); }
     catch (e2) { mode = next; }
