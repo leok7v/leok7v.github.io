@@ -7,47 +7,52 @@
 <meta name="description" content="Codexese privacy policy: no data collection, no accounts, no server. Your text and pictures stay on your device.">
 <meta name="theme-color" content="#14162e">
 <link rel="icon" type="image/png" href="icon.png">
-<style>
-:root {
-  --night: #14162e;
-  --night-2: #0b0c1c;
-  --gold: #e8cf8a;
-  --cream: #ece4d0;
-  --mute: #b6ad98;
-  --edge: rgba(232, 207, 138, 0.25);
-  --serif: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond,
-           "Times New Roman", serif;
-}
-* { box-sizing: border-box; }
-html { background: var(--night-2); }
-body {
-  margin: 0;
-  color: var(--cream);
-  font-family: var(--serif);
-  font-size: 19px;
-  line-height: 1.6;
-  background: linear-gradient(180deg, var(--night) 0%, var(--night-2) 70%);
-  min-height: 100vh;
-}
-main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
-h1 { color: var(--gold); font-weight: normal; font-size: 44px; margin: 0 0 4px; }
-.date { color: var(--mute); margin: 0 0 28px; }
-h2 { color: var(--gold); font-weight: normal; font-size: 27px; margin: 36px 0 8px; }
-a { color: var(--gold); }
-ul { padding-left: 22px; }
-li { margin: 6px 0; }
-footer {
-  margin-top: 56px;
-  padding-top: 18px;
-  border-top: 1px solid var(--edge);
-  color: var(--mute);
-  font-size: 16px;
-  text-align: center;
-}
-</style>
+<script>
+(function () {
+  try {
+    var m = localStorage.getItem('codexese-theme');
+    if (m === 'light' || m === 'dark') {
+      document.documentElement.setAttribute('data-theme', m);
+    }
+  } catch (e) { }
+}());
+</script>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-<main>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="./">
+      <img src="icon.png" alt="" aria-hidden="true">
+      Codexese
+    </a>
+    <nav class="nav-links">
+      <a href="./">Home</a>
+      <button class="theme" id="theme" type="button" data-mode="system"
+              aria-label="Switch theme">
+        <svg class="i-system" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <circle cx="12" cy="12" r="8.5"/>
+          <path d="M12 3.5 a8.5 8.5 0 0 1 0 17 z" fill="currentColor"
+                stroke="none"/>
+        </svg>
+        <svg class="i-light" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+             aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7
+                   M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/>
+        </svg>
+        <svg class="i-dark" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"
+             aria-hidden="true">
+          <path d="M20 13.5A8.5 8.5 0 0 1 10.5 4a8.5 8.5 0 1 0 9.5 9.5z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main class="wrap policy">
 <h1>Codexese Privacy Policy</h1>
 <p class="date">November 21, 2026</p>
 
@@ -106,5 +111,6 @@ date.</p>
   &copy; 2026 Dmitry &ldquo;Leo&rdquo; Kuznetsov
 </footer>
 </main>
+<script src="site.js"></script>
 </body>
 </html>

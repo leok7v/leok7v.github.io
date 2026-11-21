@@ -11,96 +11,58 @@
 <meta property="og:image" content="https://leok7v.github.io/Codexese/iphone-1.jpg">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
-<style>
-:root {
-  --night: #14162e;
-  --night-2: #0b0c1c;
-  --gold: #e8cf8a;
-  --cream: #ece4d0;
-  --mute: #b6ad98;
-  --edge: rgba(232, 207, 138, 0.25);
-  --serif: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond,
-           "Times New Roman", serif;
-}
-* { box-sizing: border-box; }
-html { background: var(--night-2); }
-body {
-  margin: 0;
-  color: var(--cream);
-  font-family: var(--serif);
-  font-size: 19px;
-  line-height: 1.55;
-  background: linear-gradient(180deg, var(--night) 0%, var(--night-2) 70%);
-  min-height: 100vh;
-}
-main { max-width: 980px; margin: 0 auto; padding: 48px 16px 64px; }
-header { text-align: center; }
-header img { width: 112px; height: 112px; border-radius: 24px; }
-h1 {
-  color: var(--gold);
-  font-weight: normal;
-  font-size: 54px;
-  margin: 12px 0 4px;
-  letter-spacing: 0.02em;
-}
-.tag { color: var(--cream); font-size: 22px; margin: 0; }
-.soon {
-  display: inline-block;
-  margin-top: 18px;
-  padding: 8px 18px;
-  border: 1px solid var(--edge);
-  border-radius: 999px;
-  color: var(--gold);
-  font-size: 17px;
-}
-.shots {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-  margin: 40px 0;
-}
-.shots img {
-  width: 100%;
-  border-radius: 14px;
-  box-shadow: 0 0 24px rgba(200, 170, 100, 0.25);
-}
-.mac img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 24px rgba(200, 170, 100, 0.2);
-}
-h2 {
-  color: var(--gold);
-  font-weight: normal;
-  font-size: 30px;
-  margin: 44px 0 10px;
-}
-ul { padding-left: 22px; }
-li { margin: 6px 0; }
-a { color: var(--gold); }
-footer {
-  margin-top: 56px;
-  padding-top: 18px;
-  border-top: 1px solid var(--edge);
-  color: var(--mute);
-  font-size: 16px;
-  text-align: center;
-}
-@media (max-width: 720px) {
-  .shots { grid-template-columns: repeat(2, 1fr); }
-  h1 { font-size: 42px; }
-  .tag { font-size: 19px; }
-}
-</style>
+<script>
+(function () {
+  try {
+    var m = localStorage.getItem('codexese-theme');
+    if (m === 'light' || m === 'dark') {
+      document.documentElement.setAttribute('data-theme', m);
+    }
+  } catch (e) { }
+}());
+</script>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-<main>
-<header>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="./">
+      <img src="icon.png" alt="" aria-hidden="true">
+      Codexese
+    </a>
+    <nav class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <button class="theme" id="theme" type="button" data-mode="system"
+              aria-label="Switch theme">
+        <svg class="i-system" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <circle cx="12" cy="12" r="8.5"/>
+          <path d="M12 3.5 a8.5 8.5 0 0 1 0 17 z" fill="currentColor"
+                stroke="none"/>
+        </svg>
+        <svg class="i-light" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+             aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7
+                   M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/>
+        </svg>
+        <svg class="i-dark" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"
+             aria-hidden="true">
+          <path d="M20 13.5A8.5 8.5 0 0 1 10.5 4a8.5 8.5 0 1 0 9.5 9.5z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
   <img src="icon.png" alt="Codexese icon">
   <h1>Codexese</h1>
   <p class="tag">Write anything. It becomes a page from a book nobody can read.</p>
   <span class="soon">Coming soon to the App Store for iPhone, iPad and Mac</span>
-</header>
+</section>
 
 <section class="shots">
   <img src="iphone-1.jpg" alt="A short message and its page in old script">
@@ -162,5 +124,6 @@ that did not read.</p>
   &copy; 2026 Dmitry &ldquo;Leo&rdquo; Kuznetsov
 </footer>
 </main>
+<script src="site.js"></script>
 </body>
 </html>
