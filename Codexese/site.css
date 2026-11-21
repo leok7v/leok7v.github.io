@@ -16,10 +16,10 @@
     color-scheme: light;
     --bg-top: #f8f6f1;
     --bg: #f1ede5;
-    --gold: #6b4a22;
-    --ink: #2b2214;
-    --mute: #6e655a;
-    --edge: rgba(107, 74, 34, 0.18);
+    --gold: #26306b;
+    --ink: #1d2130;
+    --mute: #5b6172;
+    --edge: rgba(38, 48, 107, 0.16);
     --nav-bg: rgba(248, 246, 241, 0.88);
     --glow: rgba(60, 50, 40, 0.18);
   }
@@ -28,10 +28,10 @@
   color-scheme: light;
   --bg-top: #f8f6f1;
   --bg: #f1ede5;
-  --gold: #6b4a22;
-  --ink: #2b2214;
-  --mute: #6e655a;
-  --edge: rgba(107, 74, 34, 0.18);
+  --gold: #26306b;
+  --ink: #1d2130;
+  --mute: #5b6172;
+  --edge: rgba(38, 48, 107, 0.16);
   --nav-bg: rgba(248, 246, 241, 0.88);
   --glow: rgba(60, 50, 40, 0.18);
 }
