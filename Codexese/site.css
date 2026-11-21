@@ -122,3 +122,12 @@ footer {
   .tag { font-size: 19px; }
   .brand { font-size: 19px; }
 }
+pre {
+  background: var(--nav-bg);
+  border: 1px solid var(--edge);
+  border-radius: 10px;
+  padding: 14px 18px;
+  overflow-x: auto;
+  font-size: 16px;
+}
+code { font-family: ui-monospace, "SF Mono", Menlo, monospace; }

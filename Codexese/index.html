@@ -21,7 +21,7 @@
   } catch (e) { }
 }());
 </script>
-<link rel="stylesheet" href="site.css?v=2">
+<link rel="stylesheet" href="site.css?v=3">
 </head>
 <body>
 <header class="nav">
@@ -65,7 +65,7 @@
     <img class="on-light" src="appstore-black.svg" alt="Download on the App Store">
     <img class="on-dark" src="appstore-white.svg" alt="Download on the App Store">
   </a>
-  <p class="soon">For iPhone and iPad. The Mac version is in App Store review.</p>
+  <p class="soon">For iPhone and iPad. On Mac: the App Store version is in review, or <a href="#mac">install with Homebrew</a>.</p>
 </section>
 
 <section class="shots">
@@ -104,8 +104,14 @@ needs Codexese.</p>
       Codexese right from Photos. On Mac, drop it on the window.</li>
 </ul>
 
-<section class="mac">
+<section class="mac" id="mac">
   <h2>On Mac too</h2>
+  <p>The Mac App Store version is in review. Until then, or if you like
+  Homebrew, install it in Terminal:</p>
+  <pre><code>brew tap leok7v/tap
+brew trust leok7v/tap
+brew install --cask codexese</code></pre>
+  <p>The Mac build is signed by Apple Developer ID and notarized.</p>
   <img src="mac.jpg" alt="Codexese on Mac: the text on the left, the page on the right">
 </section>
 
