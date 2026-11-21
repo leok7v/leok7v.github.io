@@ -90,7 +90,7 @@ footer {
 .hero img { width: 112px; height: 112px; border-radius: 24px; }
 .hero h1 { font-size: 54px; margin: 12px 0 4px; letter-spacing: 0.02em; }
 .tag { font-size: 22px; margin: 0; }
-.store { display: inline-block; margin-top: 22px; }
+.store { display: inline-block; margin-top: 22px; text-decoration: none; }
 .store img { height: 54px; width: auto; display: block; }
 .store .on-light { display: none; }
 @media (prefers-color-scheme: light) {
