@@ -21,7 +21,7 @@
   } catch (e) { }
 }());
 </script>
-<link rel="stylesheet" href="site.css?v=5">
+<link rel="stylesheet" href="site.css?v=6">
 </head>
 <body>
 <header class="nav">
@@ -61,12 +61,17 @@
   <img src="icon.png" alt="Codexese icon">
   <h1>Codexese</h1>
   <p class="tag">Write anything. It becomes a page from a book nobody can read.</p>
-  <a class="store" href="https://apps.apple.com/app/id6837726784">
-    <img class="on-light" src="appstore-black.svg" alt="Download on the App Store">
-    <img class="on-dark" src="appstore-white.svg" alt="Download on the App Store">
-  </a>
-  <p class="soon">For iPhone and iPad. On Mac: the App Store version is in review, or <a href="https://github.com/leok7v/Codexese/releases/latest/download/Codexese.dmg">download the Mac app</a> (signed and notarized by Apple).</p>
-</section>
+  <div class="stores">
+    <a class="store" href="https://apps.apple.com/app/id6837726784">
+      <img class="on-light" src="appstore-black.svg" alt="Download on the App Store">
+      <img class="on-dark" src="appstore-white.svg" alt="Download on the App Store">
+    </a>
+    <a class="store" href="https://apps.apple.com/app/id6837726784">
+      <img class="on-light" src="mac-black.svg" alt="Download on the Mac App Store">
+      <img class="on-dark" src="mac-white.svg" alt="Download on the Mac App Store">
+    </a>
+  </div>
+  <p class="soon">For iPhone, iPad and Mac. On Mac you can also <a href="https://github.com/leok7v/Codexese/releases/latest/download/Codexese.dmg">download the app</a> directly.</p></section>
 
 <section class="shots">
   <img src="iphone-1.jpg" alt="A short message and its page in old script">
@@ -106,10 +111,10 @@ needs Codexese.</p>
 
 <section class="mac" id="mac">
   <h2>On Mac too</h2>
-  <p>The Mac App Store version is in review. Until then,
+  <p>Get it from the Mac App Store, or
   <a href="https://github.com/leok7v/Codexese/releases/latest/download/Codexese.dmg">download Codexese for Mac</a>,
-  open the file and drag Codexese to Applications. Or, if you like
-  Homebrew, install it in Terminal:</p>
+  open the file and drag Codexese to Applications. If you like Homebrew,
+  install it in Terminal:</p>
   <pre><code>brew tap leok7v/tap
 brew trust leok7v/tap
 brew install --cask codexese</code></pre>
